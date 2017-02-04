@@ -4,38 +4,48 @@ body {
 
 .paper {
     max-width: 1200px;
-    height: 100vh;
     margin: 0 auto;
-    background-color: #cbcbcb;
+    //background-color: #cbcbcb;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
 }
 
-aside {
+/* aside {
     order: 1;
     flex: 2;
     font-family: 'Amiko', sans-serif;
     font-size: 18px;
     color: white;
-}
+} */
 
-main {
+/*main {
     order: 2;
     flex: 5;
-    height: 200px;
-    background-color: antiquewhite;
+    max-height: 700px;
+    overflow: auto;
+    //background-color: antiquewhite;
+} */
+
+.col-1 {
+    flex: 2;
 }
+
+.col-2 {
+    flex: 5;
+    padding-left: 30px;
+}
+
 
 /* ======= SIDE PANEL ======= */
 
-//div * {
-//    border: 1px solid black;
-//}
 
 .side_panel {
+    top: 60px;
+    position: fixed;
+    width: 285px;
     display: flex;
     flex-direction: column;
     background-color: #414141;
@@ -53,7 +63,7 @@ main {
 .logo_box img {
     position: relative;
     margin: 0 auto;
-    height: 100px;
+    height: 90px;
     top:50%;
     transform: translateY(-50%);
 }
@@ -98,4 +108,39 @@ li a {
 
 li a:hover {
     background-color: #69aebb;
+}
+
+/* ======= MAIN CONTENT ======= */
+
+.avatar {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 400px;
+    z-index: 3;
+    position: absolute;
+    top:100px;
+}
+
+.circle {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: rgba(66, 153, 169, 0.3);
+    position: absolute;
+}
+
+#circle1 {
+     top: 80px;
+ }
+
+#circle2 {
+    top: -30px;
+}
+
+.col-2 p {
+    position: absolute;
+    top: 50px
 }
