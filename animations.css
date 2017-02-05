@@ -1,3 +1,85 @@
+/* ================== HEART ===================== */
+
+
+.heart{
+    animation: heart_anim ease 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: heart_anim ease 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: heart_anim ease 1.5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: heart_anim ease 1.5s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: heart_anim ease 1.5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+}
+
+@keyframes heart_anim{
+    0% {
+        transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        transform:  scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+        transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-moz-keyframes heart_anim{
+    0% {
+        -moz-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -moz-transform:  scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+        -moz-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-webkit-keyframes heart_anim {
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-o-keyframes heart_anim {
+    0% {
+        -o-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -o-transform:  scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+        -o-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-ms-keyframes heart_anim {
+    0% {
+        -ms-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -ms-transform:  scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+        -ms-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+
 /* ================== QUOTE ===================== */
 
 .quote{
