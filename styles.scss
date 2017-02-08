@@ -1,3 +1,30 @@
+//==== Screen sizes ====
+
+@mixin screen_tablet_portrait {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }}
+
+@mixin screen_tablet {
+  @media only screen and (min-width: 960px) {
+    @content;
+  }}
+
+@mixin screen_desktop_small {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }}
+
+
+@mixin screen_desktop_medium {
+  @media only screen and (min-width: 1441px) {
+    @content;}}
+
+@mixin screen_desktop_large {
+  @media only screen and (min-width: 1600px) {
+    @content;}}
+
+
 //==== Variables ====
 
 // colors
