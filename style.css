@@ -35,6 +35,12 @@
     height: 100vh;
 }
 
+.container {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 .container_top {
     //background-color: #69aebb;
     height: 50vh;
