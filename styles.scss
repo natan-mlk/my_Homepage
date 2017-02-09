@@ -142,6 +142,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
   }
 }
 
+
 /* ======= SIDE PANEL ======= */
 
 
@@ -157,9 +158,6 @@ $fontNav: 'Roboto Condensed', sans-serif;
     width: 300px;
     display: flex;
     flex-direction: column;
-    background-color: $basic_grey;
-    font-family: $fontQuote;
-    font-weight: 300;
   }
 }
 
@@ -188,7 +186,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
 
 .name_box {
   text-align: center;
-  color: #cbcbcb;
+  color: $light_grey;
   @include screen_small {
     height: 200px;
     width: 100%;
@@ -198,11 +196,13 @@ $fontNav: 'Roboto Condensed', sans-serif;
 .name {
   font-size: 1.7rem;
   text-transform: uppercase;
+  background-color: $basic_grey;
 }
 
 .dev {
   font-size: 1.2rem;
 }
+
 
 .social_media_box {
   display: none;
@@ -215,9 +215,9 @@ $fontNav: 'Roboto Condensed', sans-serif;
 }
 
 .media_icon {
-  height: 40px;
-  width: auto;
-}
+    height: 40px;
+    width: auto;
+  }
 
 /* -------- NAVIGATION ------- */
 
@@ -248,10 +248,12 @@ li a:hover {
 /* -------- CIRCLES ------- */
 .avatar {
   @include create_circle;
+
+  max-height: 80vh;
   max-width: 80%;
   display: block;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-bottom: 30px;
   @include screen_small {
     height: 400px;
@@ -266,13 +268,14 @@ li a:hover {
 
 .circle {
   @include create_circle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include screen_small {
     height: 450px;
     width: 450px;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
   }
 }
 
@@ -306,7 +309,7 @@ li a:hover {
   display: none;
   @include screen_small {
     display: flex;
-    bottom: -150px;
+    bottom: -130px;
     left: 170px;
     background-color: rgba($basic_accent, 0.2);
   }
@@ -345,11 +348,12 @@ li a:hover {
   font-size: 1.1rem;
   color: $basic_grey;
   padding: 20px;
+  margin-bottom: 50px;
   @include screen_small {
     position: absolute;
     top: 90px;
     width: 80%;
-
+    margin: 0;
   }
 }
 
@@ -372,7 +376,7 @@ li a:hover {
   color: lighten($basic_grey, 25%);
   @include screen_small {
     position: absolute;
-    top: -20px;
+    top: 0;
     right: 75px;
     max-width: 360px;
     z-index: 5;
@@ -384,10 +388,15 @@ li a:hover {
 
 .portfolio {
   @include create_circle;
+  max-height: 80vh;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  @include screen_small {
   height: 380px;
   z-index: 3;
   position:absolute;
-}
+}}
 
 .is_project {
   @include screen_small {
@@ -403,22 +412,34 @@ li a:hover {
   }
 }
 
-#circle5 {
+#circle4 {
+  height: 200px;
+  width: 200px;
+  background-color:  rgba($basic_accent, 0.2);
+  text-align: center;
+  @include transform(translateY(-30%));
+  @include screen_small {
+    @include transform(translateY(0%));
   height: 270px;
   width: 270px;
   top: 40px;
   right: 350px;
-  background-color:  rgba($basic_accent, 0.2);
-  text-align: center;
+  }
 }
 
-#circle4 {
-  height: 270px;
-  width: 270px;
-  top: 80px;
-  left: 320px;
-  background-color:  rgba($basic_accent, 0.3);
+#circle5 {
+  height: 200px;
+  width: 200px;
+  background-color: rgba($basic_accent, 0.3);
   text-align: center;
+  @include transform(translateY(-30%));
+  @include screen_small {
+    @include transform(translateY(0%));
+    height: 270px;
+    width: 270px;
+    top: 80px;
+    left: 320px;
+  }
 }
 
 .bubble_caption {
@@ -426,3 +447,21 @@ li a:hover {
   font-size: 1.2rem;
   color: lighten($basic_grey, 15%);
 }
+
+
+footer {.social_media_box2 {
+  background-color: $basic_grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  @include screen_small {
+    display: none;
+  }
+  .media_icon2 {
+    height: 60px;
+    @include screen_small {
+      display: none;
+  }
+  }
+} }
