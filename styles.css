@@ -1,73 +1,122 @@
 .paper {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  flex-direction: column; }
 
+@media only screen and (min-width: 768px) {
+  .paper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; } }
 .col-1 {
-  flex: 2;
+  max-width: 100%;
   position: relative;
-  height: 100vh;
-  display: flex;
   align-items: center; }
 
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    flex: 2;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center; } }
 .col-2 {
-  flex: 5;
   position: relative;
-  padding-left: 30px; }
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
+@media only screen and (min-width: 768px) {
+  .col-2 {
+    display: block;
+    flex: 5;
+    position: relative;
+    padding-left: 30px; } }
 .section {
-  height: 100vh; }
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .section {
+      height: 100vh; } }
 
+@media only screen and (max-width: 767px) {
+  #section0 {
+    height: 100vh;
+    display: flex;
+    align-items: center; } }
 #section1 {
   position: relative;
   display: flex;
   flex-direction: column; }
 
 .container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%); }
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%); } }
 
 .container_top, .container_bot {
-  height: 50vh;
+  width: 100%;
   position: relative; }
+  @media only screen and (min-width: 768px) {
+    .container_top, .container_bot {
+      height: 50vh; } }
 
 /* ======= SIDE PANEL ======= */
 .side_panel {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 300px;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   background-color: #414141;
   font-family: "Raleway", sans-serif;
   font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    .side_panel {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      background-color: #414141;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300; } }
 
 .logo_box {
-  height: 150px;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid white; }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .logo_box {
+      display: block;
+      height: 150px;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid white; } }
 
 .logo_box img {
-  position: relative;
-  margin: 0 auto;
-  height: 90px;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%); }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .logo_box img {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      height: 90px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%); } }
 
 .name_box {
-  height: 200px;
-  width: 100%;
   text-align: center;
   color: #cbcbcb; }
+  @media only screen and (min-width: 768px) {
+    .name_box {
+      height: 200px;
+      width: 100%; } }
 
 .name {
   font-size: 1.7rem;
@@ -77,10 +126,13 @@
   font-size: 1.2rem; }
 
 .social_media_box {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px; }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .social_media_box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px; } }
 
 .media_icon {
   height: 40px;
@@ -116,52 +168,81 @@ li a:hover {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  max-height: 400px;
-  z-index: 3;
-  position: absolute;
-  bottom: -50px;
-  left: 50px; }
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 30px; }
+  @media only screen and (min-width: 768px) {
+    .avatar {
+      height: 400px;
+      width: 400px;
+      z-index: 3;
+      position: absolute;
+      bottom: -50px;
+      left: 50px;
+      margin: 0; } }
 
 .circle {
-  height: 450px;
-  width: 450px;
   border-radius: 50%;
   -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-border-radius: 50%; }
+  @media only screen and (min-width: 768px) {
+    .circle {
+      height: 450px;
+      width: 450px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .heart {
   height: 80px;
   width: 80px;
   background-color: rgba(105, 174, 187, 0.3);
-  bottom: -10px;
-  left: 120px; }
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  @media only screen and (min-width: 768px) {
+    .heart {
+      bottom: -10px;
+      left: 120px;
+      margin: 0; } }
 
 /* -------- SECTION 0 ------- */
 /* -------- SECTION 1 ------- */
 #circle1 {
-  bottom: -70px;
-  background-color: rgba(105, 174, 187, 0.3); }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #circle1 {
+      display: flex;
+      bottom: -70px;
+      background-color: rgba(105, 174, 187, 0.3); } }
 
 #circle2 {
-  bottom: -150px;
-  left: 170px;
-  background-color: rgba(105, 174, 187, 0.2); }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #circle2 {
+      display: flex;
+      bottom: -150px;
+      left: 170px;
+      background-color: rgba(105, 174, 187, 0.2); } }
 
 #circle3 {
-  height: 200px;
-  width: 200px;
-  bottom: 150px;
-  left: 400px;
-  background-color: rgba(105, 174, 187, 0.2);
-  -webkit-transition: 300ms ease-in-out;
-  -moz-transition: 300ms ease-in-out;
-  -ms-transition: 300ms ease-in-out;
-  -o-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out; }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #circle3 {
+      display: flex;
+      height: 200px;
+      width: 200px;
+      bottom: 150px;
+      left: 400px;
+      background-color: rgba(105, 174, 187, 0.2);
+      -webkit-transition: 300ms ease-in-out;
+      -moz-transition: 300ms ease-in-out;
+      -ms-transition: 300ms ease-in-out;
+      -o-transition: 300ms ease-in-out;
+      transition: 300ms ease-in-out; } }
 
 #circle3 img {
   height: 70px;
@@ -179,12 +260,15 @@ li a:hover {
   height: 80px; }
 
 .bio {
-  position: absolute;
-  top: 90px;
-  width: 80%;
   font-family: "Archivo Narrow", sans-serif;
   font-size: 1.1rem;
-  color: #414141; }
+  color: #414141;
+  padding: 20px; }
+  @media only screen and (min-width: 768px) {
+    .bio {
+      position: absolute;
+      top: 90px;
+      width: 80%; } }
 
 .bio a:link {
   color: #818181;
@@ -195,18 +279,22 @@ li a:hover {
   text-decoration: none; }
 
 .quote {
-  position: absolute;
-  top: -20px;
-  right: 75px;
-  width: 40%;
   border-right: 5px solid #818181;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   text-align: right;
-  padding-right: 20px;
-  color: #818181;
-  z-index: 5; }
+  padding: 5px 20px 5px 0;
+  margin: 0 5% 0;
+  color: #818181; }
+  @media only screen and (min-width: 768px) {
+    .quote {
+      position: absolute;
+      top: -20px;
+      right: 75px;
+      max-width: 360px;
+      z-index: 5;
+      margin: 0; } }
 
 /* -------- SECTION 2 ------- */
 .portfolio {
@@ -217,13 +305,15 @@ li a:hover {
   z-index: 3;
   position: absolute; }
 
-.is_project {
-  bottom: -50px;
-  right: 20px; }
+@media only screen and (min-width: 768px) {
+  .is_project {
+    bottom: -50px;
+    right: 20px; } }
 
-.album {
-  top: -60px;
-  left: 10px; }
+@media only screen and (min-width: 768px) {
+  .album {
+    top: -60px;
+    left: 10px; } }
 
 #circle5 {
   height: 270px;
