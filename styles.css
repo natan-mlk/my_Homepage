@@ -13,12 +13,13 @@
 .col-1 {
   max-width: 100%;
   position: relative;
-  align-items: center; }
+  align-items: center;
+  background-color: #414141; }
 
 @media only screen and (min-width: 768px) {
   .col-1 {
+    background-color: transparent;
     flex: 2;
-    position: relative;
     height: 100vh;
     display: flex;
     align-items: center; } }
@@ -69,97 +70,94 @@
     .container_top, .container_bot {
       height: 50vh; } }
 
+/* ======= NAV PANEL FOR SMARTPHONES======= */
+.top_panel {
+  background-color: #414141; }
+  @media only screen and (min-width: 768px) {
+    .top_panel {
+      display: block; } }
+
 /* ======= SIDE PANEL ======= */
 .side_panel {
-  width: 100%;
-  background-color: #414141;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300; }
-  @media only screen and (min-width: 768px) {
-    .side_panel {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 300px;
-      display: flex;
-      flex-direction: column; } }
-
-.logo_box {
   display: none; }
-  @media only screen and (min-width: 768px) {
-    .logo_box {
-      display: block;
-      height: 150px;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid white; } }
 
-.logo_box img {
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .logo_box img {
-      display: block;
-      position: relative;
-      margin: 0 auto;
-      height: 90px;
-      top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%); } }
+@media only screen and (min-width: 768px) {
+  .side_panel {
+    background-color: #414141;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
 
-.name_box {
-  text-align: center;
-  color: #cbcbcb; }
-  @media only screen and (min-width: 768px) {
-    .name_box {
-      height: 200px;
-      width: 100%; } }
+  .logo_box {
+    display: block;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white; }
 
-.name {
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  background-color: #414141; }
+  .logo_box img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); }
 
-.dev {
-  font-size: 1.2rem; }
+  .name_box {
+    background-color: #414141;
+    text-align: center;
+    color: #cbcbcb;
+    width: 100%;
+    height: 200px; }
 
-.social_media_box {
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .social_media_box {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 100px; } }
+  .name {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    background-color: #414141; }
 
-.media_icon {
-  height: 40px;
-  width: auto; }
+  .dev {
+    font-size: 1.2rem; }
 
-/* -------- NAVIGATION ------- */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: "Roboto Condensed", sans-serif; }
+  .social_media_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px; }
 
-li a {
-  display: block;
-  background-color: #cbcbcb;
-  padding: 20px;
-  text-decoration: none;
-  text-align: center;
-  color: #414141;
-  -webkit-transition: 200ms;
-  -moz-transition: 200ms;
-  -ms-transition: 200ms;
-  -o-transition: 200ms;
-  transition: 200ms; }
+  .media_icon {
+    height: 40px;
+    width: auto; }
 
-li a:hover {
-  background-color: #69aebb; }
+  /* -------- NAVIGATION ------ */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif; }
 
+  li a {
+    display: block;
+    background-color: #cbcbcb;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #414141;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms; }
+
+  li a:hover {
+    background-color: #69aebb; } }
 /* ======= MAIN CONTENT ======= */
 /* -------- CIRCLES ------- */
 .avatar {
