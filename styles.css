@@ -45,7 +45,7 @@
 
 @media only screen and (max-width: 767px) {
   #section0 {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center; } }
 #section1 {
@@ -69,13 +69,6 @@
   @media only screen and (min-width: 768px) {
     .container_top, .container_bot {
       height: 50vh; } }
-
-/* ======= NAV PANEL FOR SMARTPHONES======= */
-.top_panel {
-  background-color: #414141; }
-  @media only screen and (min-width: 768px) {
-    .top_panel {
-      display: block; } }
 
 /* ======= SIDE PANEL ======= */
 .side_panel {
@@ -158,6 +151,22 @@
 
   li a:hover {
     background-color: #69aebb; } }
+/* ======= NAV PANEL FOR SMARTPHONES======= */
+.top_panel {
+  background-color: #414141;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #cbcbcb; }
+  .top_panel .name {
+    font-size: 1.7rem;
+    text-transform: uppercase; }
+  .top_panel .dev {
+    font-size: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .top_panel {
+      display: none; } }
+
 /* ======= MAIN CONTENT ======= */
 /* -------- CIRCLES ------- */
 .avatar {
@@ -278,10 +287,10 @@
   text-decoration: none; }
 
 .quote {
-  border-right: 5px solid #818181;
+  border-right: 3px solid #818181;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: right;
   padding: 5px 20px 5px 0;
   margin: 0 5% 0;
@@ -293,7 +302,9 @@
       right: 75px;
       max-width: 360px;
       z-index: 5;
-      margin: 0; } }
+      margin: 0;
+      font-size: 1.2rem;
+      border-right: 5px solid #818181; } }
 
 /* -------- SECTION 2 ------- */
 .portfolio {
@@ -371,7 +382,7 @@ footer .social_media_box2 {
     footer .social_media_box2 {
       display: none; } }
   footer .social_media_box2 .media_icon2 {
-    height: 60px; }
+    height: 45px; }
     @media only screen and (min-width: 768px) {
       footer .social_media_box2 .media_icon2 {
         display: none; } }
