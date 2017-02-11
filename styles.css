@@ -5,7 +5,7 @@
 
 @media only screen and (min-width: 768px) {
   .paper {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -15,14 +15,17 @@
   position: relative;
   align-items: center;
   background-color: #414141; }
+  @media only screen and (min-width: 768px) {
+    .col-1 {
+      background-color: transparent;
+      flex: 2;
+      height: 100vh;
+      display: flex;
+      align-items: center; } }
+  @media only screen and (min-width: 1024px) {
+    .col-1 {
+      flex: 2; } }
 
-@media only screen and (min-width: 768px) {
-  .col-1 {
-    background-color: transparent;
-    flex: 2;
-    height: 100vh;
-    display: flex;
-    align-items: center; } }
 .col-2 {
   position: relative;
   max-width: 100%;
@@ -30,13 +33,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .col-2 {
+      display: block;
+      flex: 5;
+      position: relative;
+      padding-left: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .col-2 {
+      flex: 5; } }
 
-@media only screen and (min-width: 768px) {
-  .col-2 {
-    display: block;
-    flex: 5;
-    position: relative;
-    padding-left: 30px; } }
 .section {
   width: 100%; }
   @media only screen and (min-width: 768px) {
@@ -51,7 +57,14 @@
 #section1 {
   position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 100vh; }
+
+#section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 .container {
   width: 100%; }
@@ -68,89 +81,97 @@
   position: relative; }
   @media only screen and (min-width: 768px) {
     .container_top, .container_bot {
-      height: 50vh; } }
+      min-height: 50vh; } }
 
 /* ======= SIDE PANEL ======= */
 .side_panel {
   display: none; }
+  @media only screen and (min-width: 768px) {
+    .side_panel {
+      background-color: #414141;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      width: 210px; } }
+  @media only screen and (min-width: 1024px) {
+    .side_panel {
+      width: 260px; } }
+  @media only screen and (min-width: 1280px) {
+    .side_panel {
+      width: 310px; } }
 
-@media only screen and (min-width: 768px) {
-  .side_panel {
-    background-color: #414141;
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    display: flex;
-    flex-direction: column; }
+.logo_box {
+  display: block;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white; }
 
-  .logo_box {
-    display: block;
-    height: 150px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid white; }
+.logo_box img {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%); }
 
-  .logo_box img {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    height: 90px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%); }
+.name_box {
+  background-color: #414141;
+  text-align: center;
+  color: #cbcbcb;
+  width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .name_box {
+      height: 200px; } }
 
-  .name_box {
-    background-color: #414141;
-    text-align: center;
-    color: #cbcbcb;
-    width: 100%;
-    height: 200px; }
+.name {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  background-color: #414141; }
 
-  .name {
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    background-color: #414141; }
+.dev {
+  font-size: 1.2rem; }
 
-  .dev {
-    font-size: 1.2rem; }
+.social_media_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px; }
 
-  .social_media_box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px; }
+.media_icon {
+  height: 40px;
+  width: auto; }
 
-  .media_icon {
-    height: 40px;
-    width: auto; }
+/* -------- NAVIGATION ------ */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif; }
 
-  /* -------- NAVIGATION ------ */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: "Roboto Condensed", sans-serif; }
+li a {
+  display: block;
+  background-color: #cbcbcb;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #414141;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms; }
 
-  li a {
-    display: block;
-    background-color: #cbcbcb;
-    padding: 20px;
-    text-decoration: none;
-    text-align: center;
-    color: #414141;
-    -webkit-transition: 200ms;
-    -moz-transition: 200ms;
-    -ms-transition: 200ms;
-    -o-transition: 200ms;
-    transition: 200ms; }
+li a:hover {
+  background-color: #69aebb; }
 
-  li a:hover {
-    background-color: #69aebb; } }
 /* ======= NAV PANEL FOR SMARTPHONES======= */
 .top_panel {
   background-color: #414141;
@@ -181,13 +202,17 @@
   margin-bottom: 30px; }
   @media only screen and (min-width: 768px) {
     .avatar {
-      height: 400px;
-      width: 400px;
+      height: 300px;
+      width: 300px;
       z-index: 3;
       position: absolute;
       bottom: -50px;
       left: 50px;
       margin: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .avatar {
+      height: 400px;
+      width: 400px; } }
 
 .circle {
   border-radius: 50%;
@@ -198,9 +223,13 @@
   align-items: center; }
   @media only screen and (min-width: 768px) {
     .circle {
-      height: 450px;
-      width: 450px;
+      height: 350px;
+      width: 350px;
       position: absolute; } }
+  @media only screen and (min-width: 1024px) {
+    .circle {
+      height: 450px;
+      width: 450px; } }
 
 .heart {
   height: 80px;
@@ -211,7 +240,7 @@
   margin-bottom: 50px; }
   @media only screen and (min-width: 768px) {
     .heart {
-      bottom: -10px;
+      bottom: 0;
       left: 120px;
       margin: 0; } }
 
@@ -239,16 +268,22 @@
   @media only screen and (min-width: 768px) {
     #circle3 {
       display: flex;
-      height: 200px;
-      width: 200px;
+      height: 170px;
+      width: 170px;
       bottom: 150px;
-      left: 400px;
+      left: 270px;
       background-color: rgba(105, 174, 187, 0.2);
       -webkit-transition: 300ms ease-in-out;
       -moz-transition: 300ms ease-in-out;
       -ms-transition: 300ms ease-in-out;
       -o-transition: 300ms ease-in-out;
       transition: 300ms ease-in-out; } }
+  @media only screen and (min-width: 1024px) {
+    #circle3 {
+      height: 200px;
+      width: 200px;
+      bottom: 150px;
+      left: 400px; } }
 
 #circle3 img {
   height: 70px;
@@ -303,8 +338,11 @@
       max-width: 360px;
       z-index: 5;
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
       border-right: 5px solid #818181; } }
+  @media only screen and (min-width: 1024px) {
+    .quote {
+      font-size: 1.2rem; } }
 
 /* -------- SECTION 2 ------- */
 .portfolio {
@@ -317,9 +355,12 @@
   margin: 0 auto; }
   @media only screen and (min-width: 768px) {
     .portfolio {
-      height: 380px;
+      height: 300px;
       z-index: 3;
       position: absolute; } }
+  @media only screen and (min-width: 1024px) {
+    .portfolio {
+      height: 380px; } }
 
 @media only screen and (min-width: 768px) {
   .is_project {
@@ -344,6 +385,12 @@
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
+      height: 200px;
+      width: 200px;
+      bottom: 110px;
+      right: 250px; } }
+  @media only screen and (min-width: 1024px) {
+    #circle4 {
       height: 270px;
       width: 270px;
       top: 40px;
@@ -362,6 +409,12 @@
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
+      height: 200px;
+      width: 200px;
+      top: 80px;
+      left: 280px; } }
+  @media only screen and (min-width: 1024px) {
+    #circle5 {
       height: 270px;
       width: 270px;
       top: 80px;

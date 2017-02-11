@@ -67,7 +67,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
 
 @include screen_small {
   .paper {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -80,17 +80,18 @@ $fontNav: 'Roboto Condensed', sans-serif;
   position: relative;
   align-items: center;
   background-color: $basic_grey;
-}
-
-@include screen_small {
-  .col-1 {
-    background-color: transparent;
+  @include screen_small {
+      background-color: transparent;
+      flex: 2;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+  @include screen_desktop_small{
     flex: 2;
-    height: 100vh;
-    display: flex;
-    align-items: center;
   }
 }
+
 
 .col-2 {
   position: relative;
@@ -99,16 +100,21 @@ $fontNav: 'Roboto Condensed', sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@include screen_small {
-  .col-2 {
+  @include screen_small {
     display: block;
     flex: 5;
     position: relative;
     padding-left: 30px;
   }
+  @include screen_desktop_small {
+    flex: 5;
+  }
 }
+
+
+
+
+
 
 .section {
   width: 100%;
@@ -129,6 +135,14 @@ $fontNav: 'Roboto Condensed', sans-serif;
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+#section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
@@ -144,29 +158,37 @@ $fontNav: 'Roboto Condensed', sans-serif;
   width: 100%;
   position: relative;
   @include screen_small {
-    height: 50vh;
+    min-height: 50vh;
 
   }
 }
 
 /* ======= SIDE PANEL ======= */
 
-.side_panel {
-  display: none;
-}
 
-@include screen_small {
+
+
   .side_panel {
-    background-color: $basic_grey;
-    font-family: $fontQuote;
-    font-weight: 300;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
+    display: none;
+    @include screen_small {
+      background-color: $basic_grey;
+      font-family: $fontQuote;
+      font-weight: 300;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      width: 210px;
+    }
+    @include screen_desktop_small {
+      width: 260px;
+    }
+    @include screen_desktop_normal {
+      width: 310px;
+    }
   }
+
 
   .logo_box {
     display: block;
@@ -190,8 +212,9 @@ $fontNav: 'Roboto Condensed', sans-serif;
     text-align: center;
     color: $light_grey;
     width: 100%;
-    height: 200px;
-
+    @include screen_desktop_small{
+      height: 200px;
+    }
   }
 
   .name {
@@ -239,7 +262,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
 
   li a:hover {
     background-color: $basic_accent;
-  }}
+  }
 
   /* ======= NAV PANEL FOR SMARTPHONES======= */
 
@@ -275,14 +298,17 @@ $fontNav: 'Roboto Condensed', sans-serif;
     margin-top: 20px;
     margin-bottom: 30px;
     @include screen_small {
-      height: 400px;
-      width: 400px;
+      height: 300px;
+      width: 300px;
       z-index: 3;
       position: absolute;
       bottom: -50px;
       left: 50px;
-      margin: 0;
-    }
+      margin: 0;}
+      @include screen_desktop_small{
+        height: 400px;
+        width: 400px;
+      }
   }
 
   .circle {
@@ -291,10 +317,12 @@ $fontNav: 'Roboto Condensed', sans-serif;
     justify-content: center;
     align-items: center;
     @include screen_small {
+      height: 350px;
+      width: 350px;
+      position: absolute; }
+    @include screen_desktop_small{
       height: 450px;
       width: 450px;
-      position: absolute;
-
     }
   }
 
@@ -306,7 +334,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
     @include screen_small {
-      bottom: -10px;
+      bottom: 0;
       left: 120px;
       margin: 0;
     }
@@ -338,12 +366,18 @@ $fontNav: 'Roboto Condensed', sans-serif;
     display: none;
     @include screen_small {
       display: flex;
+      height: 170px;
+      width: 170px;
+      bottom: 150px;
+      left: 270px;
+      background-color: rgba($basic_accent, 0.2);
+      @include transition(300ms ease-in-out);
+    }
+    @include screen_desktop_small{
       height: 200px;
       width: 200px;
       bottom: 150px;
       left: 400px;
-      background-color: rgba($basic_accent, 0.2);
-      @include transition(300ms ease-in-out);
     }
   }
 
@@ -401,8 +435,11 @@ $fontNav: 'Roboto Condensed', sans-serif;
       max-width: 360px;
       z-index: 5;
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
       border-right: 5px solid lighten($basic_grey, 25%);
+    }
+    @include screen_desktop_small {
+      font-size: 1.2rem;
     }
   }
 
@@ -415,10 +452,14 @@ $fontNav: 'Roboto Condensed', sans-serif;
     display: block;
     margin: 0 auto;
     @include screen_small {
-      height: 380px;
+      height: 300px;
       z-index: 3;
       position: absolute;
     }
+    @include screen_desktop_small {
+      height: 380px;
+    }
+
   }
 
   .is_project {
@@ -443,6 +484,12 @@ $fontNav: 'Roboto Condensed', sans-serif;
     @include transform(translateY(-30%));
     @include screen_small {
       @include transform(translateY(0%));
+      height: 200px;
+      width: 200px;
+      bottom: 110px;
+      right: 250px;
+    }
+    @include screen_desktop_small {
       height: 270px;
       width: 270px;
       top: 40px;
@@ -458,6 +505,12 @@ $fontNav: 'Roboto Condensed', sans-serif;
     @include transform(translateY(-30%));
     @include screen_small {
       @include transform(translateY(0%));
+      height: 200px;
+      width: 200px;
+      top: 80px;
+      left: 280px;
+    }
+    @include screen_desktop_small {
       height: 270px;
       width: 270px;
       top: 80px;
