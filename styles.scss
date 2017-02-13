@@ -71,7 +71,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
   }
 }
 
@@ -81,17 +81,16 @@ $fontNav: 'Roboto Condensed', sans-serif;
   align-items: center;
   background-color: $basic_grey;
   @include screen_small {
-      background-color: transparent;
-      flex: 2;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-  @include screen_desktop_small{
+    background-color: transparent;
+    flex: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  @include screen_desktop_small {
     flex: 2;
   }
 }
-
 
 .col-2 {
   position: relative;
@@ -110,11 +109,6 @@ $fontNav: 'Roboto Condensed', sans-serif;
     flex: 5;
   }
 }
-
-
-
-
-
 
 .section {
   width: 100%;
@@ -165,380 +159,403 @@ $fontNav: 'Roboto Condensed', sans-serif;
 
 /* ======= SIDE PANEL ======= */
 
-
-
-
-  .side_panel {
-    display: none;
-    @include screen_small {
-      background-color: $basic_grey;
-      font-family: $fontQuote;
-      font-weight: 300;
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      width: 210px;
-    }
-    @include screen_desktop_small {
-      width: 260px;
-    }
-    @include screen_desktop_normal {
-      width: 310px;
-    }
-  }
-
-
-  .logo_box {
-    display: block;
-    height: 150px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid white;
-  }
-
-  .logo_box img {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    height: 90px;
-    top: 50%;
-    @include transform(translateY(-50%));
-  }
-
-  .name_box {
+.side_panel {
+  display: none;
+  @include screen_small {
     background-color: $basic_grey;
-    text-align: center;
-    color: $light_grey;
-    width: 100%;
-    @include screen_desktop_small{
-      height: 200px;
-    }
+    font-family: $fontQuote;
+    font-weight: 300;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+  }
+  @include screen_desktop_small {
+    width: 260px;
+  }
+  @include screen_desktop_normal {
+    width: 310px;
+  }
+}
+
+.logo_box {
+  display: block;
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  @include screen_desktop_small {
+    height: 150px;
+  }
+}
+
+.logo_box img {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: 75px;
+  top: 50%;
+  @include transform(translateY(-50%));
+  @include screen_desktop_small {
+    height: 90px;
+  }
+}
+
+.name_box {
+  background-color: $basic_grey;
+  text-align: center;
+  color: $light_grey;
+  width: 100%;
+  @include screen_desktop_small {
+    height: 200px;
   }
 
+}
+
+.name {
+  text-transform: uppercase;
+  background-color: $basic_grey;
+  @include screen_small {
+    font-size: 1.4rem;
+  }
+  @include screen_desktop_small {
+    font-size: 1.7rem;
+  }
+}
+
+.dev {
+  @include screen_small {
+    font-size: 1rem;
+  }
+  @include screen_desktop_small {
+    font-size: 1.2rem;
+  }
+}
+
+.social_media_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include screen_small {
+    height: 80px;
+  }
+  @include screen_desktop_small {
+    height: 100px;
+  }
+}
+
+.media_icon {
+  height: 40px;
+  width: auto;
+}
+
+/* -------- NAVIGATION ------ */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $fontNav;
+}
+
+li a {
+  display: block;
+  background-color: $light_grey;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: $basic_grey;
+  @include transition(200ms);
+  @include screen_desktop_small {
+    padding: 20px;
+  }
+}
+
+li a:hover {
+  background-color: $basic_accent;
+}
+
+/* ======= NAV PANEL FOR SMARTPHONES======= */
+
+.top_panel {
+  background-color: $basic_grey;
+  font-family: $fontQuote;
+  font-weight: 300;
+  text-align: center;
+  color: $light_grey;
   .name {
     font-size: 1.7rem;
     text-transform: uppercase;
-    background-color: $basic_grey;
   }
 
   .dev {
+    font-size: 1rem;
+  }
+  @include screen_small {
+    display: none;
+  }
+}
+
+/* ======= MAIN CONTENT ======= */
+
+/* -------- CIRCLES ------- */
+.avatar {
+  @include create_circle;
+
+  max-height: 80vh;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  @include screen_small {
+    height: 300px;
+    width: 300px;
+    z-index: 3;
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+    margin: 0;
+  }
+  @include screen_desktop_small {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.circle {
+  @include create_circle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include screen_small {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+  }
+  @include screen_desktop_small {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+.heart {
+  height: 80px;
+  width: 80px;
+  background-color: rgba($basic_accent, 0.3);
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @include screen_small {
+    bottom: 0;
+    left: 120px;
+    margin: 0;
+  }
+}
+
+/* -------- SECTION 0 ------- */
+
+/* -------- SECTION 1 ------- */
+
+#circle1 {
+  display: none;
+  @include screen_small {
+    display: flex;
+    bottom: -70px;
+    background-color: rgba($basic_accent, 0.3);
+  }
+}
+
+#circle2 {
+  display: none;
+  @include screen_small {
+    display: flex;
+    bottom: -130px;
+    left: 170px;
+    background-color: rgba($basic_accent, 0.2);
+  }
+}
+
+#circle3 {
+  display: none;
+  @include screen_small {
+    display: flex;
+    height: 170px;
+    width: 170px;
+    bottom: 150px;
+    left: 270px;
+    background-color: rgba($basic_accent, 0.2);
+    @include transition(300ms ease-in-out);
+  }
+  @include screen_desktop_small {
+    height: 200px;
+    width: 200px;
+    bottom: 150px;
+    left: 400px;
+  }
+}
+
+#circle3 img {
+  height: 70px;
+  opacity: 0.7;
+  @include transition(400ms ease-in-out);
+}
+
+#circle3:hover {
+  background-color: rgba($basic_accent, 0.6);
+}
+
+#circle3:hover img {
+  height: 80px;
+}
+
+.bio {
+  font-family: $fontMain;
+  font-size: 1.1rem;
+  color: $basic_grey;
+  padding: 20px;
+  margin-bottom: 50px;
+  @include screen_small {
+    position: absolute;
+    top: 90px;
+    width: 80%;
+    margin: 0;
+  }
+}
+
+.bio a:link {
+  color: lighten($basic_grey, 25%);
+  text-decoration: none;
+}
+
+.bio a:visited {
+  color: lighten($basic_grey, 25%);
+  text-decoration: none;
+}
+
+.quote {
+  border-right: 3px solid lighten($basic_grey, 25%);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: right;
+  padding: 5px 20px 5px 0;
+  margin: 0 5% 0;
+  color: lighten($basic_grey, 25%);
+  @include screen_small {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    max-width: 360px;
+    z-index: 5;
+    margin: 0;
+    font-size: 1rem;
+    border-right: 5px solid lighten($basic_grey, 25%);
+  }
+  @include screen_desktop_small {
     font-size: 1.2rem;
   }
+}
 
-  .social_media_box {
+/* -------- SECTION 2 ------- */
+
+.portfolio {
+  @include create_circle;
+  max-height: 80vh;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  @include screen_small {
+    height: 300px;
+    z-index: 3;
+    position: absolute;
+  }
+  @include screen_desktop_small {
+    height: 380px;
+  }
+
+}
+
+.is_project {
+  @include screen_small {
+    bottom: -50px;
+    right: 20px;
+  }
+}
+
+.album {
+  @include screen_small {
+    top: -60px;
+    left: 10px;
+  }
+}
+
+#circle4 {
+  height: 200px;
+  width: 200px;
+  background-color: rgba($basic_accent, 0.2);
+  text-align: center;
+  @include transform(translateY(-30%));
+  @include screen_small {
+    @include transform(translateY(0%));
+    height: 200px;
+    width: 200px;
+    bottom: 110px;
+    right: 250px;
+  }
+  @include screen_desktop_small {
+    height: 270px;
+    width: 270px;
+    top: 40px;
+    right: 350px;
+  }
+}
+
+#circle5 {
+  height: 200px;
+  width: 200px;
+  background-color: rgba($basic_accent, 0.3);
+  text-align: center;
+  @include transform(translateY(-30%));
+  @include screen_small {
+    @include transform(translateY(0%));
+    height: 200px;
+    width: 200px;
+    top: 80px;
+    left: 280px;
+  }
+  @include screen_desktop_small {
+    height: 270px;
+    width: 270px;
+    top: 80px;
+    left: 320px;
+  }
+}
+
+.bubble_caption {
+  font-family: $fontQuote;
+  font-size: 1.2rem;
+  color: lighten($basic_grey, 15%);
+}
+
+footer {
+  .social_media_box2 {
+    background-color: $basic_grey;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100px;
-
-  }
-
-  .media_icon {
-    height: 40px;
-    width: auto;
-  }
-
-  /* -------- NAVIGATION ------ */
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: $fontNav;
-  }
-
-  li a {
-    display: block;
-    background-color: $light_grey;
-    padding: 20px;
-    text-decoration: none;
-    text-align: center;
-    color: $basic_grey;
-    @include transition(200ms);
-  }
-
-  li a:hover {
-    background-color: $basic_accent;
-  }
-
-  /* ======= NAV PANEL FOR SMARTPHONES======= */
-
-  .top_panel {
-    background-color: $basic_grey;
-    font-family: $fontQuote;
-    font-weight: 300;
-    text-align: center;
-    color: $light_grey;
-    .name {
-      font-size: 1.7rem;
-      text-transform: uppercase;
-    }
-
-    .dev {
-      font-size: 1rem;
-    }
     @include screen_small {
       display: none;
     }
-  }
-
-  /* ======= MAIN CONTENT ======= */
-
-  /* -------- CIRCLES ------- */
-  .avatar {
-    @include create_circle;
-
-    max-height: 80vh;
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    @include screen_small {
-      height: 300px;
-      width: 300px;
-      z-index: 3;
-      position: absolute;
-      bottom: -50px;
-      left: 50px;
-      margin: 0;}
-      @include screen_desktop_small{
-        height: 400px;
-        width: 400px;
-      }
-  }
-
-  .circle {
-    @include create_circle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include screen_small {
-      height: 350px;
-      width: 350px;
-      position: absolute; }
-    @include screen_desktop_small{
-      height: 450px;
-      width: 450px;
-    }
-  }
-
-  .heart {
-    height: 80px;
-    width: 80px;
-    background-color: rgba($basic_accent, 0.3);
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    @include screen_small {
-      bottom: 0;
-      left: 120px;
-      margin: 0;
-    }
-  }
-  /* -------- SECTION 0 ------- */
-
-  /* -------- SECTION 1 ------- */
-
-  #circle1 {
-    display: none;
-    @include screen_small {
-      display: flex;
-      bottom: -70px;
-      background-color: rgba($basic_accent, 0.3);
-    }
-  }
-
-  #circle2 {
-    display: none;
-    @include screen_small {
-      display: flex;
-      bottom: -130px;
-      left: 170px;
-      background-color: rgba($basic_accent, 0.2);
-    }
-  }
-
-  #circle3 {
-    display: none;
-    @include screen_small {
-      display: flex;
-      height: 170px;
-      width: 170px;
-      bottom: 150px;
-      left: 270px;
-      background-color: rgba($basic_accent, 0.2);
-      @include transition(300ms ease-in-out);
-    }
-    @include screen_desktop_small{
-      height: 200px;
-      width: 200px;
-      bottom: 150px;
-      left: 400px;
-    }
-  }
-
-  #circle3 img {
-    height: 70px;
-    opacity: 0.7;
-    @include transition(400ms ease-in-out);
-  }
-
-  #circle3:hover {
-    background-color: rgba($basic_accent, 0.6);
-  }
-
-  #circle3:hover img {
-    height: 80px;
-  }
-
-  .bio {
-    font-family: $fontMain;
-    font-size: 1.1rem;
-    color: $basic_grey;
-    padding: 20px;
-    margin-bottom: 50px;
-    @include screen_small {
-      position: absolute;
-      top: 90px;
-      width: 80%;
-      margin: 0;
-    }
-  }
-
-  .bio a:link {
-    color: lighten($basic_grey, 25%);
-    text-decoration: none;
-  }
-
-  .bio a:visited {
-    color: lighten($basic_grey, 25%);
-    text-decoration: none;
-  }
-
-  .quote {
-    border-right: 3px solid lighten($basic_grey, 25%);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    text-align: right;
-    padding: 5px 20px 5px 0;
-    margin: 0 5% 0;
-    color: lighten($basic_grey, 25%);
-    @include screen_small {
-      position: absolute;
-      top: 0;
-      right: 75px;
-      max-width: 360px;
-      z-index: 5;
-      margin: 0;
-      font-size: 1rem;
-      border-right: 5px solid lighten($basic_grey, 25%);
-    }
-    @include screen_desktop_small {
-      font-size: 1.2rem;
-    }
-  }
-
-  /* -------- SECTION 2 ------- */
-
-  .portfolio {
-    @include create_circle;
-    max-height: 80vh;
-    max-width: 90%;
-    display: block;
-    margin: 0 auto;
-    @include screen_small {
-      height: 300px;
-      z-index: 3;
-      position: absolute;
-    }
-    @include screen_desktop_small {
-      height: 380px;
-    }
-
-  }
-
-  .is_project {
-    @include screen_small {
-      bottom: -50px;
-      right: 20px;
-    }
-  }
-
-  .album {
-    @include screen_small {
-      top: -60px;
-      left: 10px;
-    }
-  }
-
-  #circle4 {
-    height: 200px;
-    width: 200px;
-    background-color: rgba($basic_accent, 0.2);
-    text-align: center;
-    @include transform(translateY(-30%));
-    @include screen_small {
-      @include transform(translateY(0%));
-      height: 200px;
-      width: 200px;
-      bottom: 110px;
-      right: 250px;
-    }
-    @include screen_desktop_small {
-      height: 270px;
-      width: 270px;
-      top: 40px;
-      right: 350px;
-    }
-  }
-
-  #circle5 {
-    height: 200px;
-    width: 200px;
-    background-color: rgba($basic_accent, 0.3);
-    text-align: center;
-    @include transform(translateY(-30%));
-    @include screen_small {
-      @include transform(translateY(0%));
-      height: 200px;
-      width: 200px;
-      top: 80px;
-      left: 280px;
-    }
-    @include screen_desktop_small {
-      height: 270px;
-      width: 270px;
-      top: 80px;
-      left: 320px;
-    }
-  }
-
-  .bubble_caption {
-    font-family: $fontQuote;
-    font-size: 1.2rem;
-    color: lighten($basic_grey, 15%);
-  }
-
-  footer {
-    .social_media_box2 {
-      background-color: $basic_grey;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 100px;
+    .media_icon2 {
+      height: 45px;
       @include screen_small {
         display: none;
       }
-      .media_icon2 {
-        height: 45px;
-        @include screen_small {
-          display: none;
-        }
-      }
     }
   }
+}
