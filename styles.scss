@@ -119,7 +119,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
 
 @include screen_mobile {
   #section0 {
-    height: 90vh;
+    height: 85vh;
     display: flex;
     align-items: center;
   }
@@ -420,9 +420,14 @@ li a:hover {
   margin-bottom: 50px;
   @include screen_small {
     position: absolute;
-    top: 90px;
+    top: 50px;
     width: 80%;
     margin: 0;
+    font-size: 1rem;
+  }
+  @include screen_desktop_small {
+    font-size: 1.1rem;
+    top: 90px;
   }
 }
 

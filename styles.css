@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 767px) {
   #section0 {
-    height: 90vh;
+    height: 85vh;
     display: flex;
     align-items: center; } }
 #section1 {
@@ -331,9 +331,14 @@ li a:hover {
   @media only screen and (min-width: 768px) {
     .bio {
       position: absolute;
-      top: 90px;
+      top: 50px;
       width: 80%;
-      margin: 0; } }
+      margin: 0;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1024px) {
+    .bio {
+      font-size: 1.1rem;
+      top: 90px; } }
 
 .bio a:link {
   color: #818181;
