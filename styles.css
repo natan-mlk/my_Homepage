@@ -290,10 +290,10 @@ li a:hover {
   @media only screen and (min-width: 768px) {
     #circle3 {
       display: flex;
-      height: 170px;
-      width: 170px;
-      bottom: 150px;
-      left: 270px;
+      height: 150px;
+      width: 150px;
+      bottom: 120px;
+      left: 300px;
       background-color: rgba(105, 174, 187, 0.2);
       -webkit-transition: 300ms ease-in-out;
       -moz-transition: 300ms ease-in-out;
@@ -308,13 +308,16 @@ li a:hover {
       left: 400px; } }
 
 #circle3 img {
-  height: 70px;
+  height: 60px;
   opacity: 0.7;
   -webkit-transition: 400ms ease-in-out;
   -moz-transition: 400ms ease-in-out;
   -ms-transition: 400ms ease-in-out;
   -o-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out; }
+  @media only screen and (min-width: 1024px) {
+    #circle3 img {
+      height: 70px; } }
 
 #circle3:hover {
   background-color: rgba(105, 174, 187, 0.6); }
@@ -420,7 +423,7 @@ li a:hover {
     #circle4 {
       height: 270px;
       width: 270px;
-      top: 40px;
+      bottom: 110px;
       right: 350px; } }
 
 #circle5 {
