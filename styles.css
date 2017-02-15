@@ -113,7 +113,7 @@
     .logo_box {
       height: 150px; } }
 
-.logo_box img {
+.logo_box svg {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -122,8 +122,14 @@
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%); }
+  .logo_box svg circle {
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;
+    transition: 1000ms; }
   @media only screen and (min-width: 1024px) {
-    .logo_box img {
+    .logo_box svg {
       height: 90px; } }
 
 .name_box {

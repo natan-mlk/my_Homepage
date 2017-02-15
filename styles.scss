@@ -191,12 +191,15 @@ $fontNav: 'Roboto Condensed', sans-serif;
   }
 }
 
-.logo_box img {
+.logo_box svg {
   display: block;
   position: relative;
   margin: 0 auto;
   height: 75px;
   top: 50%;
+  circle {
+    @include transition (1000ms);
+  }
   @include transform(translateY(-50%));
   @include screen_desktop_small {
     height: 90px;
