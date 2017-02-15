@@ -209,7 +209,7 @@ body.fade-in {
   height: 75px;
   top: 50%;
   circle {
-    @include transition (1000ms);
+    @include transition (800ms);
   }
   @include transform(translateY(-50%));
   @include screen_desktop_small {
@@ -261,9 +261,14 @@ body.fade-in {
 }
 
 .media_icon {
-  height: 40px;
+  height: 30px;
   width: auto;
+  @include screen_desktop_small {
+    height: 40px;
+    width: auto;
+  }
 }
+
 
 /* -------- NAVIGATION ------ */
 
@@ -281,10 +286,12 @@ li a {
   padding: 15px;
   text-decoration: none;
   text-align: center;
+  font-size: 0.9rem;
   color: $basic_grey;
-  @include transition(200ms);
+  @include transition(400ms);
   @include screen_desktop_small {
     padding: 20px;
+    font-size: 1rem;
   }
 }
 
@@ -365,8 +372,11 @@ li a:hover {
   margin-bottom: 50px;
   @include screen_small {
     bottom: 0;
-    left: 120px;
+    left: 90px;
     margin: 0;
+  }
+  @include screen_desktop_small {
+    left: 120px;
   }
 }
 
@@ -561,6 +571,12 @@ li a:hover {
   font-family: $fontQuote;
   font-size: 1.2rem;
   color: lighten($basic_grey, 15%);
+  @include screen_small {
+    font-size: 1rem;
+  }
+  @include screen_desktop_small {
+    font-size: 1.2rem;
+  }
 }
 
 footer {

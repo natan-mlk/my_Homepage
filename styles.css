@@ -135,11 +135,11 @@ body.fade-in {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%); }
   .logo_box svg circle {
-    -webkit-transition: 1000ms;
-    -moz-transition: 1000ms;
-    -ms-transition: 1000ms;
-    -o-transition: 1000ms;
-    transition: 1000ms; }
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -ms-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms; }
   @media only screen and (min-width: 1024px) {
     .logo_box svg {
       height: 90px; } }
@@ -182,8 +182,12 @@ body.fade-in {
       height: 100px; } }
 
 .media_icon {
-  height: 40px;
+  height: 30px;
   width: auto; }
+  @media only screen and (min-width: 1024px) {
+    .media_icon {
+      height: 40px;
+      width: auto; } }
 
 /* -------- NAVIGATION ------ */
 ul {
@@ -199,15 +203,17 @@ li a {
   padding: 15px;
   text-decoration: none;
   text-align: center;
+  font-size: 0.9rem;
   color: #414141;
-  -webkit-transition: 200ms;
-  -moz-transition: 200ms;
-  -ms-transition: 200ms;
-  -o-transition: 200ms;
-  transition: 200ms; }
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms; }
   @media only screen and (min-width: 1024px) {
     li a {
-      padding: 20px; } }
+      padding: 20px;
+      font-size: 1rem; } }
 
 li a:hover {
   background-color: #69aebb; }
@@ -281,8 +287,11 @@ li a:hover {
   @media only screen and (min-width: 768px) {
     .heart {
       bottom: 0;
-      left: 120px;
+      left: 90px;
       margin: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .heart {
+      left: 120px; } }
 
 /* -------- SECTION 0 ------- */
 /* -------- SECTION 1 ------- */
@@ -472,6 +481,12 @@ li a:hover {
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   color: #676767; }
+  @media only screen and (min-width: 768px) {
+    .bubble_caption {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1024px) {
+    .bubble_caption {
+      font-size: 1.2rem; } }
 
 footer .social_media_box2 {
   background-color: #414141;
