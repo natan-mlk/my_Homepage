@@ -1,5 +1,4 @@
 body {
-  font: 100%;
   opacity: 1;
   -webkit-transition: 1500ms;
   -moz-transition: 1500ms;
@@ -429,16 +428,21 @@ li a:hover {
     top: -60px;
     left: 10px; } }
 
-#circle4 {
+.circle4 {
   height: 200px;
   width: 200px;
   background-color: rgba(105, 174, 187, 0.2);
   text-align: center;
+  -webkit-transition: 800ms;
+  -moz-transition: 800ms;
+  -ms-transition: 800ms;
+  -o-transition: 800ms;
+  transition: 800ms;
   transform: translateY(-30%);
   -webkit-transform: translateY(-30%);
   -ms-transform: translateY(-30%); }
   @media only screen and (min-width: 768px) {
-    #circle4 {
+    .circle4 {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
@@ -447,22 +451,27 @@ li a:hover {
       bottom: 110px;
       right: 250px; } }
   @media only screen and (min-width: 1024px) {
-    #circle4 {
+    .circle4 {
       height: 270px;
       width: 270px;
       bottom: 110px;
       right: 350px; } }
 
-#circle5 {
+.circle5 {
   height: 200px;
   width: 200px;
   background-color: rgba(105, 174, 187, 0.3);
   text-align: center;
+  -webkit-transition: 800ms;
+  -moz-transition: 800ms;
+  -ms-transition: 800ms;
+  -o-transition: 800ms;
+  transition: 800ms;
   transform: translateY(-30%);
   -webkit-transform: translateY(-30%);
   -ms-transform: translateY(-30%); }
   @media only screen and (min-width: 768px) {
-    #circle5 {
+    .circle5 {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
@@ -471,11 +480,14 @@ li a:hover {
       top: 80px;
       left: 250px; } }
   @media only screen and (min-width: 1024px) {
-    #circle5 {
+    .circle5 {
       height: 270px;
       width: 270px;
       top: 80px;
       left: 320px; } }
+
+.circle-hover {
+  background-color: rgba(105, 174, 187, 0.6); }
 
 .bubble_caption {
   font-family: "Raleway", sans-serif;

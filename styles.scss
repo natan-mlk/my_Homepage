@@ -61,7 +61,6 @@ $fontNav: 'Roboto Condensed', sans-serif;
 //==== Basic Layout ====
 
 body {
-  font: 100%;
   opacity: 1;
 @include transition(1500ms);
 }
@@ -82,7 +81,6 @@ body.fade-in {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    //flex-wrap: wrap;
   }
 }
 
@@ -525,11 +523,12 @@ li a:hover {
   }
 }
 
-#circle4 {
+.circle4 {
   height: 200px;
   width: 200px;
   background-color: rgba($basic_accent, 0.2);
   text-align: center;
+  @include transition (800ms);
   @include transform(translateY(-30%));
   @include screen_small {
     @include transform(translateY(0%));
@@ -546,11 +545,12 @@ li a:hover {
   }
 }
 
-#circle5 {
+.circle5 {
   height: 200px;
   width: 200px;
   background-color: rgba($basic_accent, 0.3);
   text-align: center;
+  @include transition (800ms);
   @include transform(translateY(-30%));
   @include screen_small {
     @include transform(translateY(0%));
@@ -565,6 +565,10 @@ li a:hover {
     top: 80px;
     left: 320px;
   }
+}
+
+.circle-hover {
+  background-color: rgba($basic_accent, 0.6);
 }
 
 .bubble_caption {
