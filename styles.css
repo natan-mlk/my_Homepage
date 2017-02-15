@@ -1,3 +1,15 @@
+body {
+  font: 100%;
+  opacity: 1;
+  -webkit-transition: 1500ms;
+  -moz-transition: 1500ms;
+  -ms-transition: 1500ms;
+  -o-transition: 1500ms;
+  transition: 1500ms; }
+
+body.fade-in {
+  opacity: 0; }
+
 .paper {
   max-width: 100%;
   display: flex;

@@ -59,6 +59,17 @@ $fontNav: 'Roboto Condensed', sans-serif;
 }
 
 //==== Basic Layout ====
+
+body {
+  font: 100%;
+  opacity: 1;
+@include transition(1500ms);
+}
+
+body.fade-in {
+  opacity: 0;
+}
+
 .paper {
   max-width: 100%;
   display: flex;

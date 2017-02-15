@@ -1,4 +1,7 @@
 
+document.body.className = ' ';
+
+
 
 // LOGO SCRIPT //
 
