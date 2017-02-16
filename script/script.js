@@ -42,3 +42,9 @@ function albumOut() {
   var circle4 = document.getElementById("circle5");
   circle4.className = 'circle circle5';
 }
+
+//FULLSCREEN SCROLL//
+
+$(document).ready(function () {
+  $('#demo').betterScroll();
+});
