@@ -266,7 +266,7 @@
     100% {
       -ms-transform: translate(0px, 0px) rotate(0deg) scaleX(1) scaleY(1); } }
   /* ====== CIRCLE 4 ======= */
-  #circle4 {
+  .anim {
     animation: circle4_animation ease-in-out 1s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;

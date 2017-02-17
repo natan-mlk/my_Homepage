@@ -19,19 +19,28 @@
 
 
   <title>Adam Milko</title>
+
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".example-classname",
+      });
+    });
+  </script>
+
 </head>
 
-<body>
+<body class="pageWrapper">
 
 <script>document.body.className += ' fade-in';
 </script>
 
 <!--<div id="demo" class="page">-->
-  <!--<div class="page-section">-->
-    <!--<div class="page-frame">-->
+<!--<div class="page-section">-->
+<!--<div class="page-frame">-->
 
 
-<div class="paper">
+<div class="paper full">
 
   <div class="col-1">
 
@@ -104,97 +113,94 @@
   </div>
 
 
-  <div id="demo" class="col-2 page">
+  <div id="demo" class="col-2">
 
 
+<!--    <head>
+      <script>
+        $(function() {
+          $.scrollify({
+            section : ".example-classname",
+          });
+        });
+      </script>
+    </head>
+    <body>
+    <div class="example-classname"></div>
+    <div class="example-classname"></div>
+    </body>-->
 
-
-    <!--   <div id="demo" class="page">
-         02
-         <div class="page-section">
-           03
-           <div class="page-frame">
-             04
-             ... section 1 ...
-             05
-           </div>
-           06
-         </div>
-       </div>-->
 
     <!------------SECTION 0 ------------>
 
-    <section id="section0" class="section page-section">
-      <!--<div class="page-frame">-->
-        <div class="container">
-          <div class="circle heart"></div>
-          <div class="quote">
-            <p>'Beautiful', 'nice', 'pretty' is unfortunately subjective.</p>
-            <p>Thankfully, 'clean' and 'simple' isn't.</p>
-          </div>
-        <!--</div>-->
+    <section id="section0" class="section example-classname">
+      <div class="container">
+        <div class="circle heart"></div>
+        <div class="quote">
+          <p>'Beautiful', 'nice', 'pretty' is unfortunately subjective.</p>
+          <p>Thankfully, 'clean' and 'simple' isn't.</p>
+        </div>
       </div>
 
     </section>
 
     <!----------- SECTION 1 ------------>
 
-    <section id="section1" class="section page-section">
-      <div class="page-frame">
-        <div class="container_top">
-          <div class="circle" id="circle1"></div>
-          <div class="circle" id="circle2"></div>
-          <a href="mailto:adam.milko@gmail.com">
-            <div class="circle" id="circle3">
-              <img src="img/mail_3.png" alt="mail_me">
-            </div>
-          </a>
-          <img src="img/me1.jpg" class="avatar" alt="my photo">
-        </div>
-        <div class="container_bot">
-          <div class="quote">
-            I’m an esthete and a fan of an order. I get satisfied when things I create look and work perfectly.
-          </div>
+    <section id="section1" class="section example-classname">
 
-          <div class="bio">
-            I recently finished 320h Front-end Developer professional training with <a href="#">InfoShare
-            Academy</a> in Gdańsk and I’m looking
-            for a work-place to develop my skills. I learn fast and eagerly.
-            <p>
-              I love pure JavaScript and I’m amazed by SASS powerful possibilities. I know a bit of English
-              ;)</p>
-            <p>
-              Before I discovered and became charmed by web development - the world of endless possibilities
-              and constant progress,
-              I’ve been working as an architect and a graphic designer, so I’m used to hard work on projects;
-              individually
-              and within a team.</p>
-            <p>
-              Thank you for visiting, have a good day!</p>
+      <div class="container_top">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <a href="mailto:adam.milko@gmail.com">
+          <div class="circle" id="circle3">
+            <img src="img/mail_3.png" alt="mail_me">
           </div>
+        </a>
+        <img src="img/me1.jpg" class="avatar" alt="my photo">
+      </div>
+      <div class="container_bot">
+        <div class="quote">
+          I’m an esthete and a fan of an order. I get satisfied when things I create look and work perfectly.
+        </div>
+
+        <div class="bio">
+          I recently finished 320h Front-end Developer professional training with <a href="#">InfoShare
+          Academy</a> in Gdańsk and I’m looking
+          for a work-place to develop my skills. I learn fast and eagerly.
+          <p>
+            I love pure JavaScript and I’m amazed by SASS powerful possibilities. I know a bit of English
+            ;)</p>
+          <p>
+            Before I discovered and became charmed by web development - the world of endless possibilities
+            and constant progress,
+            I’ve been working as an architect and a graphic designer, so I’m used to hard work on projects;
+            individually
+            and within a team.</p>
+          <p>
+            Thank you for visiting, have a good day!</p>
         </div>
       </div>
+
     </section>
 
     <!----------- SECTION 2 ------------>
 
-    <section id="section2" class="section page-section">
-      <div class="page-frame">
-        <div class="container_top">
-          <a href="#"><img src="img/is_group.jpg" class="is_project portfolio" alt="infoshare project"></a>
-          <div class="circle circle4" id="circle4">
-            <p class="bubble_caption">
-              InfoShare group<br>
-              project
-            </p>
-          </div>
-        </div>
+    <section id="section2" class="section example-classname">
 
-        <div class="container_bot">
-          <a href="#"><img src="img/album.jpg" class="album portfolio" alt="album"></a>
-          <div class="circle circle5" id="circle5">
-            <p class="bubble_caption">My travelling <br>photoalbum</p>
-          </div>
+      <div class="container_top slide">
+        <a href="#"><img src="img/is_group.jpg" class="is_project portfolio" alt="infoshare project"></a>
+        <div class="circle circle4" id="circle4">
+          <p class="bubble_caption">
+            InfoShare group<br>
+            project
+          </p>
+        </div>
+      </div>
+
+      <div class="container_bot">
+        <a href="#"><img src="img/album.jpg" class="album portfolio" alt="album"></a>
+        <div class="circle circle5" id="circle5">
+          <p class="bubble_caption">My travelling <br>photoalbum</p>
         </div>
       </div>
     </section>
@@ -211,7 +217,8 @@
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="script/jquery.betterScroll.js"></script>
+<!--<script src="script/jquery.betterScroll.js"></script>-->
+<script src="script/jquery.scrollify.js"></script>
 <script src="script/script.js"></script>
 
 
