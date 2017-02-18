@@ -90,7 +90,7 @@
       <nav>
         <ul>
           <li><a href="#section0">Hello!</a></li>
-          <li><a href="#section1">This is me</a></li>
+          <li id="li1"><a href="#section1">This is me</a></li>
           <li><a href="#section2">and this I can do</a></li>
         </ul>
       </nav>
@@ -116,7 +116,9 @@
 
     <!------------SECTION 0 ------------>
 
-    <section id="section0" class="section scrollify-section">
+    <section id="section0"
+             class="section scrollify-section"
+             data-section-name="zero">
       <div class="container">
         <div class="circle heart"></div>
         <div class="quote quote1-animation">
@@ -133,7 +135,9 @@
 
     <!----------- SECTION 1 ------------>
 
-    <section id="section1" class="section scrollify-section">
+    <section id="section1"
+             class="section scrollify-section section1"
+             data-section-name="one">
 
       <div class="container_top">
         <div class="circle circle1"></div>
@@ -172,7 +176,9 @@
 
     <!----------- SECTION 2 ------------>
 
-    <section id="section2" class="section scrollify-section">
+    <section id="section2"
+             class="section scrollify-section"
+             data-section-name="two">
 
       <div class="container_top">
         <a href="#"><img src="img/is_group.jpg" class="is_project portfolio" alt="infoshare project"></a>
@@ -194,7 +200,7 @@
   </div>
 </div>
 
-<footer class="foot">
+<footer>
   <div class="social_media_box2">
     <a href="https://github.com/natan-mlk"><img src="img/github.png" class="media_icon2" alt="github"></a>
     <a href="https://www.linkedin.com/in/adam-milko-395303121/"><img src="img/linkedin.png" class="media_icon2"
@@ -204,6 +210,9 @@
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!--<script src="script/scrollspy.js"></script>-->
+
 <script src="script/jquery.scrollify.js"></script>
 <script src="script/script.js"></script>
 
