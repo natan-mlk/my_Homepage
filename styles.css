@@ -199,9 +199,6 @@ ul {
 li {
   background-color: #cbcbcb; }
 
-#top-menu li.active a {
-  background-color: #69aebb; }
-
 li a {
   display: block;
   padding: 15px;
@@ -219,7 +216,10 @@ li a {
       padding: 20px;
       font-size: 1rem; } }
 
-/* ======= NAV PANEL FOR SMARTPHONES======= */
+#top-menu li.active a {
+  background-color: #69aebb; }
+
+/* ======= PANEL FOR SMARTPHONES ======= */
 .top_panel {
   width: 100%;
   background-color: #414141;

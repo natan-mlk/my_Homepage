@@ -279,36 +279,27 @@ ul {
 }
 
 li {
-  background-color: $light_grey
+  background-color: $light_grey;
+  a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+    color: $basic_grey;
+    @include transition(400ms);
+    @include screen_desktop_small {
+      padding: 20px;
+      font-size: 1rem;
+    }
 }
-
 
 #top-menu li.active a {
   background-color: $basic_accent
 }
 
 
-
-li a {
-  display: block;
-  //background-color: $light_grey;
-  padding: 15px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.9rem;
-  color: $basic_grey;
-  @include transition(400ms);
-  @include screen_desktop_small {
-    padding: 20px;
-    font-size: 1rem;
-  }
-}
-
-//li a:hover {
-//  background-color: $basic_accent;
-//}
-
-/* ======= NAV PANEL FOR SMARTPHONES======= */
+/* ======= PANEL FOR SMARTPHONES ======= */
 
 .top_panel {
   width: 100%;

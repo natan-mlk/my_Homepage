@@ -134,19 +134,9 @@ $(window).on('scroll', function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
 // SCROLLSPY
 
-
+//https://jsfiddle.net/mekwall/up4nu/
 
 // Cache selectors
 var lastId,
