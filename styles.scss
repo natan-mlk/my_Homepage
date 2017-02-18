@@ -382,7 +382,7 @@ li a:hover {
 
 /* -------- SECTION 1 ------- */
 
-#circle1 {
+.circle1 {
   display: none;
   @include screen_small {
     display: flex;
@@ -391,7 +391,7 @@ li a:hover {
   }
 }
 
-#circle2 {
+.circle2 {
   display: none;
   @include screen_small {
     display: flex;
@@ -401,7 +401,7 @@ li a:hover {
   }
 }
 
-#circle3 {
+.circle3 {
   display: none;
   @include screen_small {
     display: flex;
@@ -420,7 +420,7 @@ li a:hover {
   }
 }
 
-#circle3 img {
+.circle3 img {
   height: 60px;
   opacity: 0.7;
   @include transition(400ms ease-in-out);
@@ -429,11 +429,11 @@ li a:hover {
   }
 }
 
-#circle3:hover {
+.circle3:hover {
   background-color: rgba($basic_accent, 0.6);
 }
 
-#circle3:hover img {
+.circle3:hover img {
   height: 80px;
 }
 
@@ -475,6 +475,7 @@ li a:hover {
   padding: 5px 20px 5px 0;
   margin: 0 5% 0;
   color: lighten($basic_grey, 25%);
+  @include transition (1500ms);
   @include screen_small {
     position: absolute;
     top: 0;
@@ -483,7 +484,7 @@ li a:hover {
     z-index: 5;
     margin: 0;
     font-size: 1rem;
-    border-right: 5px solid lighten($basic_grey, 25%);
+    border-right: 4px solid lighten($basic_grey, 25%);
   }
   @include screen_desktop_small {
     font-size: 1.2rem;
@@ -528,7 +529,7 @@ li a:hover {
   width: 200px;
   background-color: rgba($basic_accent, 0.2);
   text-align: center;
-  @include transition (800ms);
+  @include transition (1000ms);
   @include transform(translateY(-30%));
   @include screen_small {
     @include transform(translateY(0%));
@@ -540,8 +541,8 @@ li a:hover {
   @include screen_desktop_small {
     height: 270px;
     width: 270px;
-    bottom: 110px;
-    right: 350px;
+    bottom: 95px;
+    right: 335px;
   }
 }
 
@@ -550,7 +551,7 @@ li a:hover {
   width: 200px;
   background-color: rgba($basic_accent, 0.3);
   text-align: center;
-  @include transition (800ms);
+  @include transition (1000ms);
   @include transform(translateY(-30%));
   @include screen_small {
     @include transform(translateY(0%));
@@ -562,8 +563,8 @@ li a:hover {
   @include screen_desktop_small {
     height: 270px;
     width: 270px;
-    top: 80px;
-    left: 320px;
+    top: 95px;
+    left: 300px;
   }
 }
 

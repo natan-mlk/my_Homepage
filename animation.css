@@ -52,132 +52,104 @@
   100% {
     -ms-transform: scaleX(1) scaleY(1); } }
 /* ================== QUOTE ===================== */
-.quote {
-  animation: animation_quote ease-out 1.5s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  -webkit-animation: animation_quote ease-out 1.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -moz-animation: animation_quote ease-out 1.5s;
-  -moz-animation-iteration-count: 1;
-  -moz-transform-origin: 50% 50%;
-  -o-animation: animation_quote ease-out 1.5s;
-  -o-animation-iteration-count: 1;
-  -o-transform-origin: 50% 50%;
-  -ms-animation: animation_quote ease-out 1.5s;
-  -ms-animation-iteration-count: 1;
-  -ms-transform-origin: 50% 50%; }
+.quote1-animation {
+  -webkit-transform: translate(-20px, 0px);
+  -moz-transform: translate(-20px, 0px);
+  -ms-transforme: translate(-20px, 0px);
+  -o-transforme: translate(-20px, 0px);
+  transform: translate(-20px, 0px); }
 
-@keyframes animation_quote {
-  0% {
-    transform: translate(-20px, 0px); }
-  100% {
-    transform: translate(0px, 0px); } }
-@-moz-keyframes animation_quote {
-  0% {
-    -moz-transform: translate(-20px, 0px); }
-  100% {
-    -moz-transform: translate(0px, 0px); } }
-@-webkit-keyframes animation_quote {
-  0% {
-    -webkit-transform: translate(-20px, 0px); }
-  100% {
-    -webkit-transform: translate(0px, 0px); } }
-@-o-keyframes animation_quote {
-  0% {
-    -o-transform: translate(-20px, 0px); }
-  100% {
-    -o-transform: translate(0px, 0px); } }
-@-ms-keyframes animation_quote {
-  0% {
-    -ms-transform: translate(-20px, 0px); }
-  100% {
-    -ms-transform: translate(0px, 0px); } }
+.quote-animation {
+  -webkit-transform: translate(-20px, 0px);
+  -moz-transform: translate(-20px, 0px);
+  -ms-transforme: translate(-20px, 0px);
+  -o-transforme: translate(-20px, 0px);
+  transform: translate(-20px, 0px); }
+
 /* ================== CIRCLES ===================== */
 /* ====== CIRCLE 1 ======= */
-#circle1 {
-  animation: animationFrames1 ease-in-out 4s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  -webkit-animation: animationFrames1 ease-in-out 4s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -moz-animation: animationFrames1 ease-in-out 4s;
-  -moz-animation-iteration-count: 1;
-  -moz-transform-origin: 50% 50%;
-  -o-animation: animationFrames1 ease-in-out 4s;
-  -o-animation-iteration-count: 1;
-  -o-transform-origin: 50% 50%;
-  -ms-animation: animationFrames1 ease-in-out 4s;
-  -ms-animation-iteration-count: 1;
-  -ms-transform-origin: 50% 50%; }
-
-@keyframes animationFrames1 {
-  0% {
-    transform: translate(0px, 0px); }
-  40% {
-    transform: translate(14px, 9px); }
-  61% {
-    transform: translate(7px, 7px); }
-  100% {
-    transform: translate(0px, 0px); } }
-@-moz-keyframes animationFrames1 {
-  0% {
-    -moz-transform: translate(0px, 0px); }
-  40% {
-    -moz-transform: translate(14px, 9px); }
-  61% {
-    -moz-transform: translate(7px, 7px); }
-  100% {
-    -moz-transform: translate(0px, 0px); } }
-@-webkit-keyframes animationFrames1 {
-  0% {
-    -webkit-transform: translate(0px, 0px); }
-  40% {
-    -webkit-transform: translate(14px, 9px); }
-  61% {
-    -webkit-transform: translate(7px, 7px); }
-  100% {
-    -webkit-transform: translate(0px, 0px); } }
-@-o-keyframes animationFrames1 {
-  0% {
-    -o-transform: translate(0px, 0px); }
-  40% {
-    -o-transform: translate(14px, 9px); }
-  61% {
-    -o-transform: translate(7px, 7px); }
-  100% {
-    -o-transform: translate(0px, 0px); } }
-@-ms-keyframes animationFrames1 {
-  0% {
-    -ms-transform: translate(0px, 0px); }
-  40% {
-    -ms-transform: translate(14px, 9px); }
-  61% {
-    -ms-transform: translate(7px, 7px); }
-  100% {
-    -ms-transform: translate(0px, 0px); } }
-/* ====== CIRCLE 2 ======= */
 @media only screen and (min-width: 768px) {
-  #circle2 {
-    animation: animationFrames ease-in-out 5s;
+  .circle1-animation {
+    animation: circle1-anim ease-in-out 4s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
-    -webkit-animation: animationFrames ease-in-out 5s;
+    -webkit-animation: circle1-anim ease-in-out 4s;
     -webkit-animation-iteration-count: 1;
     -webkit-transform-origin: 50% 50%;
-    -moz-animation: animationFrames ease-in-out 5s;
+    -moz-animation: circle1-anim ease-in-out 4s;
     -moz-animation-iteration-count: 1;
     -moz-transform-origin: 50% 50%;
-    -o-animation: animationFrames ease-in-out 5s;
+    -o-animation: circle1-anim ease-in-out 4s;
     -o-animation-iteration-count: 1;
     -o-transform-origin: 50% 50%;
-    -ms-animation: animationFrames ease-in-out 5s;
+    -ms-animation: circle1-anim ease-in-out 4s;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%; }
 
-  @keyframes animationFrames {
+  @keyframes circle1-anim {
+    0% {
+      transform: translate(0px, 0px); }
+    40% {
+      transform: translate(14px, 9px); }
+    61% {
+      transform: translate(7px, 7px); }
+    100% {
+      transform: translate(0px, 0px); } }
+  @-moz-keyframes circle1-anim {
+    0% {
+      -moz-transform: translate(0px, 0px); }
+    40% {
+      -moz-transform: translate(14px, 9px); }
+    61% {
+      -moz-transform: translate(7px, 7px); }
+    100% {
+      -moz-transform: translate(0px, 0px); } }
+  @-webkit-keyframes circle1-anim {
+    0% {
+      -webkit-transform: translate(0px, 0px); }
+    40% {
+      -webkit-transform: translate(14px, 9px); }
+    61% {
+      -webkit-transform: translate(7px, 7px); }
+    100% {
+      -webkit-transform: translate(0px, 0px); } }
+  @-o-keyframes circle1-anim {
+    0% {
+      -o-transform: translate(0px, 0px); }
+    40% {
+      -o-transform: translate(14px, 9px); }
+    61% {
+      -o-transform: translate(7px, 7px); }
+    100% {
+      -o-transform: translate(0px, 0px); } }
+  @-ms-keyframes circle1-anim {
+    0% {
+      -ms-transform: translate(0px, 0px); }
+    40% {
+      -ms-transform: translate(14px, 9px); }
+    61% {
+      -ms-transform: translate(7px, 7px); }
+    100% {
+      -ms-transform: translate(0px, 0px); } }
+  /* ====== CIRCLE 2 ======= */
+  .circle2-animation {
+    animation: circle2-anim ease-in-out 5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    -webkit-animation: circle2-anim ease-in-out 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: circle2-anim ease-in-out 5s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: circle2-anim ease-in-out 5s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: circle2-anim ease-in-out 5s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%; }
+
+  @keyframes circle2-anim {
     0% {
       transform: translate(0px, 0px); }
     35% {
@@ -186,7 +158,7 @@
       transform: translate(-7px, -9px); }
     100% {
       transform: translate(0px, 0px); } }
-  @-moz-keyframes animationFrames {
+  @-moz-keyframes circle2-anim {
     0% {
       -moz-transform: translate(0px, 0px); }
     35% {
@@ -195,7 +167,7 @@
       -moz-transform: translate(-7px, -9px); }
     100% {
       -moz-transform: translate(0px, 0px); } }
-  @-webkit-keyframes animationFrames {
+  @-webkit-keyframes circle2-anim {
     0% {
       -webkit-transform: translate(0px, 0px); }
     35% {
@@ -204,7 +176,7 @@
       -webkit-transform: translate(-7px, -9px); }
     100% {
       -webkit-transform: translate(0px, 0px); } }
-  @-o-keyframes animationFrames {
+  @-o-keyframes circle2-anim {
     0% {
       -o-transform: translate(0px, 0px); }
     35% {
@@ -213,7 +185,7 @@
       -o-transform: translate(-7px, -9px); }
     100% {
       -o-transform: translate(0px, 0px); } }
-  @-ms-keyframes animationFrames {
+  @-ms-keyframes circle2-anim {
     0% {
       -ms-transform: translate(0px, 0px); }
     35% {
@@ -223,149 +195,103 @@
     100% {
       -ms-transform: translate(0px, 0px); } }
   /* ====== CIRCLE 3 ======= */
-  #circle3 {
-    animation: animation_circle_3 ease-out 2s;
+  .circle3-animation {
+    animation: circle3-anim ease-out 2s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
-    -webkit-animation: animation_circle_3 ease-out 2s;
+    -webkit-animation: circle3-anim ease-out 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-transform-origin: 50% 50%;
-    -moz-animation: animation_circle_3 ease-out 2s;
+    -moz-animation: circle3-anim ease-out 2s;
     -moz-animation-iteration-count: 1;
     -moz-transform-origin: 50% 50%;
-    -o-animation: animation_circle_3 ease-out 2s;
+    -o-animation: circle3-anim ease-out 2s;
     -o-animation-iteration-count: 1;
     -o-transform-origin: 50% 50%;
-    -ms-animation: animation_circle_3 ease-out 2s;
+    -ms-animation: circle3-anim ease-out 2s;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%; }
 
-  @keyframes animation_circle_3 {
+  @keyframes circle3-anim {
     0% {
       transform: translate(-18px, 19px) rotate(-60deg) scaleX(0.7) scaleY(0.7); }
     100% {
       transform: translate(0px, 0px) rotate(0deg) scaleX(1) scaleY(1); } }
-  @-moz-keyframes animation_circle_3 {
+  @-moz-keyframes circle3-anim {
     0% {
       -moz-transform: translate(-18px, 19px) rotate(-60deg) scaleX(0.7) scaleY(0.7); }
     100% {
       -moz-transform: translate(0px, 0px) rotate(0deg) scaleX(1) scaleY(1); } }
-  @-webkit-keyframes animation_circle_3 {
+  @-webkit-keyframes circle3-anim {
     0% {
       -webkit-transform: translate(-18px, 19px) rotate(-60deg) scaleX(0.7) scaleY(0.7); }
     100% {
       -webkit-transform: translate(0px, 0px) rotate(0deg) scaleX(1) scaleY(1); } }
-  @-o-keyframes animation_circle_3 {
+  @-o-keyframes circle3-anim {
     0% {
       -o-transform: translate(-18px, 19px) rotate(-60deg) scaleX(0.7) scaleY(0.7); }
     100% {
       -o-transform: translate(0px, 0px) rotate(0deg) scaleX(1) scaleY(1); } }
-  @-ms-keyframes animation_circle_3 {
+  @-ms-keyframes circle3-anim {
     0% {
       -ms-transform: translate(-18px, 19px) rotate(-60deg) scaleX(0.7) scaleY(0.7); }
     100% {
       -ms-transform: translate(0px, 0px) rotate(0deg) scaleX(1) scaleY(1); } }
   /* ====== CIRCLE 4 ======= */
-  .anim {
-    animation: circle4_animation ease-in-out 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    -webkit-animation: circle4_animation ease-out 1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -moz-animation: circle4_animation ease-out 1s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -o-animation: circle4_animation ease-out 1s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -ms-animation: circle4_animation ease-out 1s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%; }
+  .circle4-animation {
+    -webkit-transform: translate(-20px, -20px);
+    -moz-transform: translate(-20px, -20px);
+    -ms-transforme: translate(-20px, -20px);
+    -o-transforme: translate(-20px, -20px);
+    transform: translate(-20px, -20px); }
 
-  @keyframes circle4_animation {
-    0% {
-      -webkit-transform: translate(15px, 15px);
-      -moz-transform: translate(15px, 15px);
-      -ms-transforme: translate(15px, 15px);
-      -o-transforme: translate(15px, 15px);
-      transform: translate(15px, 15px); }
-    100% {
-      -webkit-transform: translate(0px, 0px);
-      -moz-transform: translate(0px, 0px);
-      -ms-transforme: translate(0px, 0px);
-      -o-transforme: translate(0px, 0px);
-      transform: translate(0px, 0px); } }
   /* ====== CIRCLE 5 ======= */
-  #circle5 {
-    animation: circle5_animation ease-in-out 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    -webkit-animation: circle5_animation ease-out 1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -moz-animation: circle5_animation ease-out 1s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -o-animation: circle5_animation ease-out 1s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -ms-animation: circle5_animation ease-out 1s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%; }
+  .circle5-animation {
+    -webkit-transform: translate(20px, 20px);
+    -moz-transform: translate(20px, 20px);
+    -ms-transforme: translate(20px, 20px);
+    -o-transforme: translate(20px, 20px);
+    transform: translate(20px, 20px); }
 
-  @keyframes circle5_animation {
-    0% {
-      -webkit-transform: translate(-15px, -15px);
-      -moz-transform: translate(-15px, -15px);
-      -ms-transforme: translate(-15px, -15px);
-      -o-transforme: translate(-15px, -15px);
-      transform: translate(-15px, -15px); }
-    100% {
-      -webkit-transform: translate(0px, 0px);
-      -moz-transform: translate(0px, 0px);
-      -ms-transforme: translate(0px, 0px);
-      -o-transforme: translate(0px, 0px);
-      transform: translate(0px, 0px); } }
   /* ================== AVATAR ===================== */
   .avatar {
-    animation: animationFrames3 ease-out 1s;
+    animation: avatar-anim ease-out 1s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
-    -webkit-animation: animationFrames3 ease-out 1s;
+    -webkit-animation: avatar-anim ease-out 1s;
     -webkit-animation-iteration-count: 1;
     -webkit-transform-origin: 50% 50%;
-    -moz-animation: animationFrames3 ease-out 1s;
+    -moz-animation: avatar-anim ease-out 1s;
     -moz-animation-iteration-count: 1;
     -moz-transform-origin: 50% 50%;
-    -o-animation: animationFrames3 ease-out 1s;
+    -o-animation: avatar-anim ease-out 1s;
     -o-animation-iteration-count: 1;
     -o-transform-origin: 50% 50%;
-    -ms-animation: animationFrames3 ease-out 1s;
+    -ms-animation: avatar-anim ease-out 1s;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%; }
 
-  @keyframes animationFrames3 {
+  @keyframes avatar-anim {
     0% {
       transform: translate(-9px, 6px); }
     100% {
       transform: translate(0px, 0px); } }
-  @-moz-keyframes animationFrames3 {
+  @-moz-keyframes avatar-anim {
     0% {
       -moz-transform: translate(-9px, 6px); }
     100% {
       -moz-transform: translate(0px, 0px); } }
-  @-webkit-keyframes animationFrames3 {
+  @-webkit-keyframes avatar-anim {
     0% {
       -webkit-transform: translate(-9px, 6px); }
     100% {
       -webkit-transform: translate(0px, 0px); } }
-  @-o-keyframes animationFrames3 {
+  @-o-keyframes avatar-anim {
     0% {
       -o-transform: translate(-9px, 6px); }
     100% {
       -o-transform: translate(0px, 0px); } }
-  @-ms-keyframes animationFrames3 {
+  @-ms-keyframes avatar-anim {
     0% {
       -ms-transform: translate(-9px, 6px); }
     100% {

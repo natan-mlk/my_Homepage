@@ -45,21 +45,6 @@ function albumOut() {
 
 //FULLSCREEN SCROLL//
 
-// $(document).ready(function () {
-//   $('#demo').betterScroll();
-// });
-
-
-
-// $(document).alton({
-//   fullSlideContainer: 'full', // Tell Alton the full height container
-//   singleSlideClass: 'slide', // Tell Alton the full height slide class
-//   useSlideNumbers: true, // Set to false if you don't want to use pagination
-//   slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items
-//   slideNumbersColor: 'transparent', // Set the inner color of the pagination items
-//   bodyContainer: 'pageWrapper', // Tell Alton the body class
-// });
-
 
 $.scrollify({
   section : ".example-classname",
@@ -83,12 +68,63 @@ $.scrollify({
 
 // ANIMATION ON APPEAR
 
+// QUOTE2
+$(window).on('scroll', function () {
+  var p = $('.avatar');
+  var offset = p.offset().top;
+  var scrollTop = $(window).scrollTop()
+  if (scrollTop > (offset - window.outerHeight/2)) {
+    $('.quote2').addClass("quote-animation");
+  }
+});
+
+// CIRCLE 1
+$(window).on('scroll', function () {
+  var p = $('.avatar');
+  var offset = p.offset().top;
+  var scrollTop = $(window).scrollTop()
+  if (scrollTop > (offset - window.outerHeight/2)) {
+    $('.circle1').addClass("circle1-animation");
+  }
+});
+
+// CIRCLE 2
+$(window).on('scroll', function () {
+  var p = $('.avatar');
+  var offset = p.offset().top;
+  var scrollTop = $(window).scrollTop()
+  if (scrollTop > (offset - window.outerHeight/2)) {
+    $('.circle2').addClass("circle2-animation");
+  }
+});
+
+// CIRCLE 3
+$(window).on('scroll', function () {
+  var p = $('.avatar');
+  var offset = p.offset().top;
+  var scrollTop = $(window).scrollTop()
+  if (scrollTop > (offset - window.outerHeight/2)) {
+    $('.circle3').addClass("circle3-animation");
+  }
+});
+
+// CIRCLE 4
+$(window).on('scroll', function () {
+  var p = $('.is_project');
+  var offset = p.offset().top;
+  var scrollTop = $(window).scrollTop()
+  if (scrollTop > (offset - window.outerHeight/2)) {
+    $('.circle4').addClass("circle4-animation");
+  }
+});
+// CIRCLE 5
 $(window).on('scroll', function () {
 
-  var p = $('.circle4');
+  var p = $('.is_project');
   var offset = p.offset().top;
   var scrollTop = $(window).scrollTop()
   if (scrollTop > (offset - window.outerHeight / 2)) {
-    $('.circle4').addClass("anim");
+    $('.circle5').addClass("circle5-animation");
   }
 });
+

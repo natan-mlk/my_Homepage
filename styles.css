@@ -294,27 +294,27 @@ li a:hover {
 
 /* -------- SECTION 0 ------- */
 /* -------- SECTION 1 ------- */
-#circle1 {
+.circle1 {
   display: none; }
   @media only screen and (min-width: 768px) {
-    #circle1 {
+    .circle1 {
       display: flex;
       bottom: -70px;
       background-color: rgba(105, 174, 187, 0.3); } }
 
-#circle2 {
+.circle2 {
   display: none; }
   @media only screen and (min-width: 768px) {
-    #circle2 {
+    .circle2 {
       display: flex;
       bottom: -130px;
       left: 170px;
       background-color: rgba(105, 174, 187, 0.2); } }
 
-#circle3 {
+.circle3 {
   display: none; }
   @media only screen and (min-width: 768px) {
-    #circle3 {
+    .circle3 {
       display: flex;
       height: 150px;
       width: 150px;
@@ -327,13 +327,13 @@ li a:hover {
       -o-transition: 300ms ease-in-out;
       transition: 300ms ease-in-out; } }
   @media only screen and (min-width: 1024px) {
-    #circle3 {
+    .circle3 {
       height: 200px;
       width: 200px;
       bottom: 150px;
       left: 400px; } }
 
-#circle3 img {
+.circle3 img {
   height: 60px;
   opacity: 0.7;
   -webkit-transition: 400ms ease-in-out;
@@ -342,13 +342,13 @@ li a:hover {
   -o-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out; }
   @media only screen and (min-width: 1024px) {
-    #circle3 img {
+    .circle3 img {
       height: 70px; } }
 
-#circle3:hover {
+.circle3:hover {
   background-color: rgba(105, 174, 187, 0.6); }
 
-#circle3:hover img {
+.circle3:hover img {
   height: 80px; }
 
 .bio {
@@ -385,7 +385,12 @@ li a:hover {
   text-align: right;
   padding: 5px 20px 5px 0;
   margin: 0 5% 0;
-  color: #818181; }
+  color: #818181;
+  -webkit-transition: 1500ms;
+  -moz-transition: 1500ms;
+  -ms-transition: 1500ms;
+  -o-transition: 1500ms;
+  transition: 1500ms; }
   @media only screen and (min-width: 768px) {
     .quote {
       position: absolute;
@@ -395,7 +400,7 @@ li a:hover {
       z-index: 5;
       margin: 0;
       font-size: 1rem;
-      border-right: 5px solid #818181; } }
+      border-right: 4px solid #818181; } }
   @media only screen and (min-width: 1024px) {
     .quote {
       font-size: 1.2rem; } }
@@ -433,11 +438,11 @@ li a:hover {
   width: 200px;
   background-color: rgba(105, 174, 187, 0.2);
   text-align: center;
-  -webkit-transition: 800ms;
-  -moz-transition: 800ms;
-  -ms-transition: 800ms;
-  -o-transition: 800ms;
-  transition: 800ms;
+  -webkit-transition: 1000ms;
+  -moz-transition: 1000ms;
+  -ms-transition: 1000ms;
+  -o-transition: 1000ms;
+  transition: 1000ms;
   transform: translateY(-30%);
   -webkit-transform: translateY(-30%);
   -ms-transform: translateY(-30%); }
@@ -454,19 +459,19 @@ li a:hover {
     .circle4 {
       height: 270px;
       width: 270px;
-      bottom: 110px;
-      right: 350px; } }
+      bottom: 95px;
+      right: 335px; } }
 
 .circle5 {
   height: 200px;
   width: 200px;
   background-color: rgba(105, 174, 187, 0.3);
   text-align: center;
-  -webkit-transition: 800ms;
-  -moz-transition: 800ms;
-  -ms-transition: 800ms;
-  -o-transition: 800ms;
-  transition: 800ms;
+  -webkit-transition: 1000ms;
+  -moz-transition: 1000ms;
+  -ms-transition: 1000ms;
+  -o-transition: 1000ms;
+  transition: 1000ms;
   transform: translateY(-30%);
   -webkit-transform: translateY(-30%);
   -ms-transform: translateY(-30%); }
@@ -483,8 +488,8 @@ li a:hover {
     .circle5 {
       height: 270px;
       width: 270px;
-      top: 80px;
-      left: 320px; } }
+      top: 95px;
+      left: 300px; } }
 
 .circle-hover {
   background-color: rgba(105, 174, 187, 0.6); }
