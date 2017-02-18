@@ -300,6 +300,7 @@ li a:hover {
 /* ======= NAV PANEL FOR SMARTPHONES======= */
 
 .top_panel {
+  width: 100%;
   background-color: $basic_grey;
   font-family: $fontQuote;
   font-weight: 300;
@@ -467,6 +468,8 @@ li a:hover {
 }
 
 .quote {
+  box-sizing: border-box;
+  max-width: 90%;
   border-right: 3px solid lighten($basic_grey, 25%);
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -477,6 +480,7 @@ li a:hover {
   color: lighten($basic_grey, 25%);
   @include transition (1500ms);
   @include screen_small {
+    padding: 5px 20px 5px 0;
     position: absolute;
     top: 0;
     right: 75px;

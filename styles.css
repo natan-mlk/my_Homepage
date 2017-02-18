@@ -219,6 +219,7 @@ li a:hover {
 
 /* ======= NAV PANEL FOR SMARTPHONES======= */
 .top_panel {
+  width: 100%;
   background-color: #414141;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -378,6 +379,8 @@ li a:hover {
   text-decoration: none; }
 
 .quote {
+  box-sizing: border-box;
+  max-width: 90%;
   border-right: 3px solid #818181;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -393,6 +396,7 @@ li a:hover {
   transition: 1500ms; }
   @media only screen and (min-width: 768px) {
     .quote {
+      padding: 5px 20px 5px 0;
       position: absolute;
       top: 0;
       right: 75px;
