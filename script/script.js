@@ -47,7 +47,7 @@ function albumOut() {
 
 
 $.scrollify({
-  section : ".example-classname",
+  section : ".scrollify-section",
   sectionName : "section-name",
   interstitialSection : "",
   easing: "easeOutExpo",
