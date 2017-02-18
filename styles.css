@@ -148,7 +148,7 @@ body.fade-in {
   text-align: center;
   color: #cbcbcb;
   width: 100%; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-height: 769px) {
     .name_box {
       height: 200px; } }
 
@@ -172,18 +172,16 @@ body.fade-in {
 .social_media_box {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
-  @media only screen and (min-width: 768px) {
-    .social_media_box {
-      height: 80px; } }
-  @media only screen and (min-width: 1024px) {
+  align-items: center;
+  height: 80px; }
+  @media only screen and (min-height: 769px) {
     .social_media_box {
       height: 100px; } }
 
 .media_icon {
   height: 30px;
   width: auto; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-height: 769px) {
     .media_icon {
       height: 40px;
       width: auto; } }
@@ -198,23 +196,22 @@ ul {
 
 li {
   background-color: #cbcbcb; }
-
-li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #414141;
-  -webkit-transition: 400ms;
-  -moz-transition: 400ms;
-  -ms-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms; }
-  @media only screen and (min-width: 1024px) {
-    li a {
-      padding: 20px;
-      font-size: 1rem; } }
+  li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #414141;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms; }
+    @media only screen and (min-width: 1024px) {
+      li a {
+        padding: 20px;
+        font-size: 1rem; } }
 
 #top-menu li.active a {
   background-color: #69aebb; }
@@ -257,7 +254,11 @@ li a {
       bottom: -50px;
       left: 50px;
       margin: 0; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (max-height: 768px) {
+    .avatar {
+      height: 300px;
+      width: 300px; } }
+  @media only screen and (min-height: 769px) {
     .avatar {
       height: 400px;
       width: 400px; } }
@@ -274,7 +275,11 @@ li a {
       height: 350px;
       width: 350px;
       position: absolute; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (max-height: 768px) {
+    .circle {
+      height: 350px;
+      width: 350px; } }
+  @media only screen and (min-height: 769px) {
     .circle {
       height: 450px;
       width: 450px; } }
@@ -319,17 +324,19 @@ li a {
   @media only screen and (min-width: 768px) {
     .circle3 {
       display: flex;
-      height: 150px;
-      width: 150px;
-      bottom: 120px;
-      left: 300px;
       background-color: rgba(105, 174, 187, 0.2);
       -webkit-transition: 300ms ease-in-out;
       -moz-transition: 300ms ease-in-out;
       -ms-transition: 300ms ease-in-out;
       -o-transition: 300ms ease-in-out;
       transition: 300ms ease-in-out; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (max-height: 768px) {
+    .circle3 {
+      height: 150px;
+      width: 150px;
+      bottom: 120px;
+      left: 300px; } }
+  @media only screen and (min-height: 769px) {
     .circle3 {
       height: 200px;
       width: 200px;
@@ -452,7 +459,7 @@ li a {
   transform: translateY(-30%);
   -webkit-transform: translateY(-30%);
   -ms-transform: translateY(-30%); }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-height: 768px) {
     .circle4 {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
@@ -461,7 +468,7 @@ li a {
       width: 200px;
       bottom: 110px;
       right: 250px; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-height: 769px) {
     .circle4 {
       height: 270px;
       width: 270px;

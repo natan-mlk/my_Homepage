@@ -1,4 +1,4 @@
-//==== Screen sizes ====
+//==== Screen width ====
 
 @mixin screen_mobile {
   @media only screen and (max-width: 767px) {
@@ -20,6 +20,20 @@
 
 @mixin screen_desktop_normal {
   @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+//==== Screen height ====
+
+@mixin height_less_768 {
+  @media only screen and (max-height: 768px) {
+    @content;
+  }
+}
+
+@mixin height_more_768 {
+  @media only screen and (min-height: 769px) {
     @content;
   }
 }
@@ -220,9 +234,13 @@ body.fade-in {
   text-align: center;
   color: $light_grey;
   width: 100%;
-  @include screen_desktop_small {
-    height: 200px;
+
+  @include height_more_768 {
+    height: 200px
   }
+  //@include screen_desktop_small {
+  //  height: 200px;
+  //}
 
 }
 
@@ -250,18 +268,25 @@ body.fade-in {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @include screen_small {
-    height: 80px;
+  height: 80px;
+
+  //@include screen_small {
+  //  height: 80px;
+  //}
+
+  @include height_more_768 {
+    height: 100px
   }
-  @include screen_desktop_small {
-    height: 100px;
-  }
+
+  //@include screen_desktop_small {
+  //  height: 100px;
+  //}
 }
 
 .media_icon {
   height: 30px;
   width: auto;
-  @include screen_desktop_small {
+  @include height_more_768 {
     height: 40px;
     width: auto;
   }
@@ -292,6 +317,7 @@ li {
       padding: 20px;
       font-size: 1rem;
     }
+  }
 }
 
 #top-menu li.active a {
@@ -326,7 +352,6 @@ li {
 /* -------- CIRCLES ------- */
 .avatar {
   @include create_circle;
-
   max-height: 80vh;
   max-width: 80%;
   display: block;
@@ -342,10 +367,20 @@ li {
     left: 50px;
     margin: 0;
   }
-  @include screen_desktop_small {
+
+  @include height_less_768 {
+    height: 300px;
+    width: 300px;
+  }
+  @include height_more_768 {
     height: 400px;
     width: 400px;
   }
+
+  //@include screen_desktop_small {
+  //  height: 400px;
+  //  width: 400px;
+  //}
 }
 
 .circle {
@@ -358,10 +393,21 @@ li {
     width: 350px;
     position: absolute;
   }
-  @include screen_desktop_small {
+
+  @include height_less_768 {
+    height: 350px;
+    width: 350px;
+  }
+
+  @include height_more_768 {
     height: 450px;
     width: 450px;
   }
+
+  //@include screen_desktop_small {
+  //  height: 450px;
+  //  width: 450px;
+  //}
 }
 
 .heart {
@@ -408,19 +454,27 @@ li {
   display: none;
   @include screen_small {
     display: flex;
+
+    background-color: rgba($basic_accent, 0.2);
+    @include transition(300ms ease-in-out);
+  }
+
+  @include height_less_768 {
     height: 150px;
     width: 150px;
     bottom: 120px;
     left: 300px;
-    background-color: rgba($basic_accent, 0.2);
-    @include transition(300ms ease-in-out);
   }
-  @include screen_desktop_small {
+  @include height_more_768 {
     height: 200px;
     width: 200px;
     bottom: 150px;
     left: 400px;
   }
+
+  //@include screen_desktop_small {
+  //
+  //}
 }
 
 .circle3 img {
@@ -505,6 +559,17 @@ li {
   max-width: 90%;
   display: block;
   margin: 0 auto;
+
+  //@include height_less_768 {
+  //  height: 300px;
+  //  z-index: 3;
+  //  position: absolute;
+  //}
+  //
+  //@include height_more_768 {
+  //  height: 380px;
+  //}
+
   @include screen_small {
     height: 300px;
     z-index: 3;
@@ -513,7 +578,6 @@ li {
   @include screen_desktop_small {
     height: 380px;
   }
-
 }
 
 .is_project {
@@ -537,14 +601,14 @@ li {
   text-align: center;
   @include transition (1000ms);
   @include transform(translateY(-30%));
-  @include screen_small {
+  @include height_less_768 {
     @include transform(translateY(0%));
     height: 200px;
     width: 200px;
     bottom: 110px;
     right: 250px;
   }
-  @include screen_desktop_small {
+  @include height_more_768 {
     height: 270px;
     width: 270px;
     bottom: 95px;
