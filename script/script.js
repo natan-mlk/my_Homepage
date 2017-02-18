@@ -20,12 +20,12 @@ isProject.addEventListener("mouseover", isProjectHov);
 isProject.addEventListener("mouseout", isProjectOut);
 
 function isProjectHov() {
-  var circle4 = document.getElementById("circle4");
+  var circle4 = document.getElementsByClassName("circle4")[0];
   circle4.classList.add('circle-hover');
 }
 
 function isProjectOut() {
-  var circle4 = document.getElementById("circle4");
+  var circle4 = document.getElementsByClassName("circle4")[0];
   circle4.classList.remove('circle-hover');
 }
 // circle 5
@@ -34,12 +34,12 @@ album.addEventListener("mouseover", albumHov);
 album.addEventListener("mouseout", albumOut);
 
 function albumHov() {
-  var circle5 = document.getElementById("circle5");
+  var circle5 = document.getElementsByClassName("circle5")[0];
   circle5.classList.add('circle-hover');
 }
 
 function albumOut() {
-  var circle5 = document.getElementById("circle5");
+  var circle5 = document.getElementsByClassName("circle5")[0];
   circle5.classList.remove('circle-hover');
 }
 
@@ -89,6 +89,6 @@ $(window).on('scroll', function () {
   var offset = p.offset().top;
   var scrollTop = $(window).scrollTop()
   if (scrollTop > (offset - window.outerHeight / 2)) {
-    $('#circle4').addClass("anim");
+    $('.circle4').addClass("anim");
   }
 });
