@@ -282,13 +282,12 @@ li {
   background-color: $light_grey
 }
 
-.li-color {
+
+#top-menu li.active a {
   background-color: $basic_accent
 }
 
-.li-color2 {
-  background-color: $light_grey
-}
+
 
 li a {
   display: block;

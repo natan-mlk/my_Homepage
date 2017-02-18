@@ -199,11 +199,8 @@ ul {
 li {
   background-color: #cbcbcb; }
 
-.li-color {
+#top-menu li.active a {
   background-color: #69aebb; }
-
-.li-color2 {
-  background-color: #cbcbcb; }
 
 li a {
   display: block;
