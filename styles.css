@@ -28,7 +28,7 @@ body.fade-in {
   @media only screen and (min-width: 768px) {
     .col-1 {
       background-color: transparent;
-      flex: 2;
+      flex: 1.6;
       height: 100vh;
       display: flex;
       align-items: center; } }
@@ -51,7 +51,8 @@ body.fade-in {
       padding-left: 30px; } }
   @media only screen and (min-width: 1024px) {
     .col-2 {
-      flex: 5; } }
+      flex: 5;
+      padding-left: 30px; } }
 
 .section {
   width: 100%; }
@@ -464,7 +465,7 @@ li {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      bottom: 90px;
+      bottom: 50px;
       right: 250px; } }
   @media only screen and (min-height: 769px) {
     .circle4 {
@@ -491,7 +492,7 @@ li {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      top: 80px;
+      top: 60px;
       left: 250px; } }
   @media only screen and (min-height: 769px) {
     .circle5 {
