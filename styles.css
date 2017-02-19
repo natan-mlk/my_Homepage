@@ -243,7 +243,7 @@ li {
   max-width: 80%;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 30px; }
   @media only screen and (min-width: 768px) {
     .avatar {
@@ -351,7 +351,7 @@ li {
   -ms-transition: 400ms ease-in-out;
   -o-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-height: 769px) {
     .circle3 img {
       height: 70px; } }
 
@@ -432,7 +432,7 @@ li {
       height: 300px;
       z-index: 3;
       position: absolute; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-height: 769px) {
     .portfolio {
       height: 380px; } }
 
@@ -464,9 +464,7 @@ li {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      height: 200px;
-      width: 200px;
-      bottom: 110px;
+      bottom: 90px;
       right: 250px; } }
   @media only screen and (min-height: 769px) {
     .circle4 {
@@ -493,11 +491,9 @@ li {
       transform: translateY(0%);
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      height: 200px;
-      width: 200px;
       top: 80px;
       left: 250px; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-height: 769px) {
     .circle5 {
       height: 270px;
       width: 270px;
