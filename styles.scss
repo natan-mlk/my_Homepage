@@ -27,7 +27,7 @@
 //==== Screen height ====
 
 @mixin height_less_768 {
-  @media only screen and (max-height: 768px) {
+  @media only screen and (min-height: 600px) and (max-height: 768px) {
     @content;
   }
 }

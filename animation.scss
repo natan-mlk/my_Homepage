@@ -97,7 +97,7 @@
 
 
 /* ================== QUOTE ===================== */
-
+@include screen_small {
 .quote1-animation{
   @include transform(translate(-20px,0px))
 }
@@ -110,7 +110,7 @@
 
 /* ====== CIRCLE 1 ======= */
 
-@include screen_small {
+
 .circle1-animation {
   animation: circle1-anim ease-in-out 4s;
   animation-iteration-count: 1;
