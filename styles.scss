@@ -239,10 +239,6 @@ body.fade-in {
   @include height_more_768 {
     height: 200px
   }
-  //@include screen_desktop_small {
-  //  height: 200px;
-  //}
-
 }
 
 .name {
@@ -270,18 +266,9 @@ body.fade-in {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-
-  //@include screen_small {
-  //  height: 80px;
-  //}
-
   @include height_more_768 {
     height: 100px
   }
-
-  //@include screen_desktop_small {
-  //  height: 100px;
-  //}
 }
 
 .media_icon {
@@ -377,11 +364,6 @@ li {
     height: 400px;
     width: 400px;
   }
-
-  //@include screen_desktop_small {
-  //  height: 400px;
-  //  width: 400px;
-  //}
 }
 
 .circle {
@@ -404,11 +386,6 @@ li {
     height: 450px;
     width: 450px;
   }
-
-  //@include screen_desktop_small {
-  //  height: 450px;
-  //  width: 450px;
-  //}
 }
 
 .heart {
@@ -560,16 +537,6 @@ li {
   max-width: 90%;
   display: block;
   margin: 0 auto;
-
-  //@include height_less_768 {
-  //  height: 300px;
-  //  z-index: 3;
-  //  position: absolute;
-  //}
-  //
-  //@include height_more_768 {
-  //  height: 380px;
-  //}
 
   @include screen_small {
     height: 300px;
