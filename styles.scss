@@ -27,7 +27,7 @@
 //==== Screen height ====
 
 @mixin height_less_768 {
-  @media only screen and (min-height: 600px) and (max-height: 768px) {
+  @media only screen and (max-height: 768px) {
     @content;
   }
 }
@@ -540,7 +540,7 @@ li {
     position: absolute;
     top: 0;
     right: 75px;
-    max-width: 340px;
+    max-width: 420px;
     z-index: 5;
     margin: 0;
     font-size: 1rem;
@@ -601,15 +601,15 @@ li {
   text-align: center;
   @include transition (1000ms);
   @include transform(translateY(-30%));
-  @include height_less_768 {
+  @include screen_small {
     @include transform(translateY(0%));
     bottom: 90px;
     right: 250px;
   }
   @include height_more_768 {
-    height: 270px;
-    width: 270px;
-    bottom: 95px;
+    height: 250px;
+    width: 250px;
+    bottom: 75px;
     right: 335px;
   }
 }
@@ -627,8 +627,8 @@ li {
     left: 250px;
   }
   @include height_more_768 {
-    height: 270px;
-    width: 270px;
+    height: 250px;
+    width: 250px;
     top: 95px;
     left: 300px;
   }
@@ -645,7 +645,7 @@ li {
   @include screen_small {
     font-size: 1rem;
   }
-  @include screen_desktop_small {
+  @include  height_more_768 {
     font-size: 1.2rem;
   }
 }
