@@ -449,10 +449,6 @@ li {
     bottom: 150px;
     left: 400px;
   }
-
-  //@include screen_desktop_small {
-  //
-  //}
 }
 
 .circle3 img {
@@ -492,12 +488,12 @@ li {
 }
 
 .bio a:link {
-  color: lighten($basic_grey, 25%);
+  color: darken($basic_accent, 25%);
   text-decoration: none;
 }
 
 .bio a:visited {
-  color: lighten($basic_grey, 25%);
+  color: darken($basic_accent, 25%);
   text-decoration: none;
 }
 
