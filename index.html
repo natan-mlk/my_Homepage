@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="animation.css">
 
   <!-- FONTS -->
-
   <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow&amp;subset=latin,latin-ext" rel="stylesheet"
         type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -19,24 +18,16 @@
   <title>Adam Milko</title>
 
   <script>
-    $(function() {
+    $(function () {
       $.scrollify({
-        section : ".scrollify-section",
+        section: ".scrollify-section",
       });
     });
   </script>
-
 </head>
-
 <body>
 
-<script>document.body.className += ' fade-in';
-</script>
-
-<!--<div id="demo" class="page">-->
-<!--<div class="page-section">-->
-<!--<div class="page-frame">-->
-
+<script>document.body.className += ' fade-in'; </script>
 
 <div class="paper full">
 
@@ -89,24 +80,35 @@
 
       <nav>
         <ul id="top-menu">
-          <li class="active"><a href="#section0">Hello!</a></li>
-          <li><a href="#section1">This is me</a></li>
-          <li><a href="#section2">and this I can do</a></li>
+          <li class="active">
+            <a href="#section0">Hello!</a>
+          </li>
+          <li>
+            <a href="#section1">This is me</a>
+          </li>
+          <li>
+            <a href="#section2">and this I can do</a>
+          </li>
         </ul>
       </nav>
 
       <div class="social_media_box">
-        <a href="https://github.com/natan-mlk"><img src="img/github.png" class="media_icon" alt="github"></a>
-        <a href="https://www.linkedin.com/in/adam-milko-395303121/"><img src="img/linkedin.png" class="media_icon"
-                                                                         alt="linked in"></a>
+        <a target="_blank" href="https://github.com/natan-mlk">
+          <img src="img/github.png"
+               class="media_icon"
+               alt="github">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/adam-milko-395303121/">
+          <img src="img/linkedin.png"
+               class="media_icon"
+               alt="linked in">
+        </a>
         <a href="mailto:adam.milko@gmail.com"><img src="img/mail.png" class="media_icon" alt="mail me"></a>
       </div>
     </div>
   </div>
 
-
   <div id="demo" class="col-2">
-
 
     <!------------SECTION 0 ------------>
 
@@ -149,19 +151,20 @@
         </div>
 
         <div class="bio">
-          I recently finished 320h Front-end Developer professional training with <a href="http://infoshareacademy.com/">InfoShare
-          Academy</a> in Gdańsk and I’m looking for a work-place to develop my skills.
+          I recently finished 320h Front-end Developer professional training with <a target="_blank"
+                                                                                     href="http://infoshareacademy.com/">
+          InfoShare Academy</a> in Gdańsk and I’m looking for a work-place to develop my skills.
           To me, my greatest emolument, will be an experience and new knowledge.
           <p>
-            I love what ReactJS is giving to developers and I can no longer code css without SASS powerful possibilities.
+            I love what ReactJS is giving to developers and I can no longer code css without SASS powerful
+            possibilities.
             Looking for more things to amaze me :)
           </p>
           <p>
             Before I discovered and became charmed by web development - the world of endless possibilities
             and constant progress,
             I’ve been working as an architect and a graphic designer, so I’m used to hard work on projects;
-            individually
-            and within a team.</p>
+            individually and within a team.</p>
           <p>
             Thank you for visiting, have a good day!</p>
         </div>
@@ -176,7 +179,11 @@
              data-section-name="two">
 
       <div class="container_top">
-        <a href="http://glasses.jfdd6.is-academy.pl/"><img src="img/is_group.jpg" class="is_project portfolio" alt="infoshare project"></a>
+        <a target="_blank" href="http://glasses.jfdd6.is-academy.pl/">
+          <img src="img/is_group.jpg"
+               class="is_project portfolio"
+               alt="infoshare project">
+        </a>
         <div class="circle circle4">
           <p class="bubble_caption">
             InfoShare group<br>
@@ -186,7 +193,8 @@
       </div>
 
       <div class="container_bot">
-        <a href="http://adammilko.com/album/main.html"><img src="img/album.jpg" class="album portfolio" alt="album"></a>
+        <a target="_blank" href="http://adammilko.com/album/main.html"><img src="img/album.jpg" class="album portfolio"
+                                                                            alt="album"></a>
         <div class="circle circle5">
           <p class="bubble_caption">My travelling <br>photoalbum</p>
         </div>
@@ -197,19 +205,18 @@
 
 <footer>
   <div class="social_media_box2">
-    <a href="https://github.com/natan-mlk"><img src="img/github.png" class="media_icon2" alt="github"></a>
-    <a href="https://www.linkedin.com/in/adam-milko-395303121/">
+    <a target="_blank" href="https://github.com/natan-mlk"><img src="img/github.png" class="media_icon2"
+                                                                alt="github"></a>
+    <a target="_blank" href="https://www.linkedin.com/in/adam-milko-395303121/">
       <img src="img/linkedin.png" class="media_icon2" alt="linked in">
     </a>
-    <a href="mailto:adam.milko@gmail.com"><img src="img/mail.png" class="media_icon2" alt="mail me"></a>
+    <a target="_blank" href="mailto:adam.milko@gmail.com"><img src="img/mail.png" class="media_icon2" alt="mail me"></a>
   </div>
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-<script src="script/jquery.scrollify.js"></script>
-<script src="script/script.js"></script>
-
+<script src="vendor/jquery.scrollify.js"></script>
+<script src="vendor/script.js"></script>
 
 </body>
 </html>

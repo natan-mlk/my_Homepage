@@ -43,36 +43,7 @@ function albumOut() {
   circle5.classList.remove('circle-hover');
 }
 
-//FULLSCREEN SCROLL//
-
-
-$.scrollify({
-  section : ".scrollify-section",
-  sectionName : "section-name",
-  interstitialSection : "",
-  easing: "easeOutExpo",
-  scrollSpeed: 1500,
-  offset : 0,
-  scrollbars: true,
-  standardScrollElements: "",
-  setHeights: true,
-  overflowScroll: true,
-  updateHash: true,
-  touchScroll:false,
-  before:function() {},
-  after:function() {},
-  afterResize:function() {},
-  afterRender:function() {}
-});
-
-// SIDE PANEL
-
-
-
-
-
 // ANIMATION ON APPEAR
-
 // QUOTE2
 $(window).on('scroll', function () {
   var p = $('.avatar');
@@ -134,9 +105,7 @@ $(window).on('scroll', function () {
 });
 
 
-// SCROLLSPY
-
-//https://jsfiddle.net/mekwall/up4nu/
+// VENDOR : SCROLLSPY
 
 // Cache selectors
 var lastId,
@@ -184,24 +153,23 @@ $(window).scroll(function(){
   }
 });
 
+//VENDOR : FULLSCREEN SCROLL
 
-
-
-//
-// $('#section1').on('scrollSpy:enter', function() {
-//   $('.li1').addClass(".li-color");
-// });
-//
-// $('#section1').on('scrollSpy:exit', function() {
-//   $('.li1').addClass("li-color2");
-// });
-//
-// $('#section1').scrollSpy();
-
-
-// or you could do this:
-// $.scrollSpy($('.tile'));
-// or this
-// $('.tile').each(function(i, element) {
-//      $.scrollSpy(element);
-// });
+$.scrollify({
+  section : ".scrollify-section",
+  sectionName : "section-name",
+  interstitialSection : "",
+  easing: "easeOutExpo",
+  scrollSpeed: 1500,
+  offset : 0,
+  scrollbars: true,
+  standardScrollElements: "",
+  setHeights: true,
+  overflowScroll: true,
+  updateHash: true,
+  touchScroll:false,
+  before:function() {},
+  after:function() {},
+  afterResize:function() {},
+  afterRender:function() {}
+});
