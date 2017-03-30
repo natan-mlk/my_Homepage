@@ -180,11 +180,6 @@ body.fade-in {
   }
 }
 
-.col-reverse {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 /* ======= SIDE PANEL ======= */
 
 .side_panel {
@@ -538,6 +533,14 @@ li {
   justify-content: space-around;
   //position: absolute;
   width: 100%;
+  @include screen_small {
+    flex-wrap: nowrap;
+  }
+}
+
+.col-reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .top {
@@ -546,6 +549,17 @@ li {
 
 .bot {
 
+}
+
+.portfolio-box {
+  padding: 0 50px 0;
+  text-align: center;
+  font-family: $fontMain;
+  font-size: 1.1rem;
+  color: $basic_grey;
+
+ // font-family: 'Raleway', sans-serif;
+  //color: lighten($basic_grey, 25%);
 }
 
 .circle-portfolio {

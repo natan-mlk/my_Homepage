@@ -94,10 +94,6 @@ body.fade-in {
     .container_top, .container_bot {
       min-height: 50vh; } }
 
-.col-reverse {
-  display: flex;
-  flex-direction: column-reverse; }
-
 /* ======= SIDE PANEL ======= */
 .side_panel {
   display: none; }
@@ -430,9 +426,23 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .flex-container {
+      flex-wrap: nowrap; } }
+
+.col-reverse {
+  display: flex;
+  flex-direction: column-reverse; }
 
 .top {
   bottom: 0; }
+
+.portfolio-box {
+  padding: 0 50px 0;
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.1rem;
+  color: #414141; }
 
 .circle-portfolio {
   border-radius: 50%;
