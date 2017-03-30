@@ -14,7 +14,7 @@ window.setInterval(colorMyBox, 1600);
 
 // HOVER EFFECT FOR PORTFOLIO LINKS //
 
-//circle 4
+/*//circle 4
 var isProject = document.getElementsByClassName("is_project")[0];
 isProject.addEventListener("mouseover", isProjectHov);
 isProject.addEventListener("mouseout", isProjectOut);
@@ -41,7 +41,7 @@ function albumHov() {
 function albumOut() {
   var circle5 = document.getElementsByClassName("circle5")[0];
   circle5.classList.remove('circle-hover');
-}
+}*/
 
 // ANIMATION ON APPEAR
 // QUOTE2
@@ -83,7 +83,7 @@ $(window).on('scroll', function () {
     $('.circle3').addClass("circle3-animation");
   }
 });
-
+/*
 // CIRCLE 4
 $(window).on('scroll', function () {
   var p = $('.is_project');
@@ -102,7 +102,7 @@ $(window).on('scroll', function () {
   if (scrollTop > (offset - window.outerHeight / 2)) {
     $('.circle5').addClass("circle5-animation");
   }
-});
+});*/
 
 
 // VENDOR : SCROLLSPY

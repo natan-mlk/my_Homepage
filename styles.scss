@@ -177,8 +177,12 @@ body.fade-in {
   position: relative;
   @include screen_small {
     min-height: 50vh;
-
   }
+}
+
+.col-reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /* ======= SIDE PANEL ======= */
@@ -341,7 +345,7 @@ li {
 .avatar {
   @include create_circle;
   max-height: 80vh;
-  max-width: 80%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
   margin-top: 40px;
@@ -526,6 +530,28 @@ li {
 }
 
 /* -------- SECTION 2 ------- */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  //position: absolute;
+  width: 100%;
+}
+
+.top {
+  bottom: 0;
+}
+
+.bot {
+
+}
+
+.circle-portfolio {
+  @include create_circle;
+}
+
 
 .portfolio {
   @include create_circle;
