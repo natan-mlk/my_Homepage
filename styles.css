@@ -241,7 +241,7 @@ li {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   max-height: 80vh;
-  max-width: 80%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
   margin-top: 40px;
@@ -301,7 +301,6 @@ li {
     .heart {
       left: 120px; } }
 
-/* -------- SECTION 0 ------- */
 /* -------- SECTION 1 ------- */
 .circle1 {
   display: none; }
@@ -325,7 +324,7 @@ li {
   @media only screen and (min-width: 768px) {
     .circle3 {
       display: flex;
-      background-color: rgba(105, 174, 187, 0.2);
+      background-color: rgba(105, 174, 187, 0.4);
       -webkit-transition: 300ms ease-in-out;
       -moz-transition: 300ms ease-in-out;
       -ms-transition: 300ms ease-in-out;
@@ -420,100 +419,64 @@ li {
       font-size: 1.2rem; } }
 
 /* -------- SECTION 2 ------- */
-.portfolio {
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .flex-container {
+      flex-wrap: nowrap; } }
+
+.col-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.caption {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 5px;
+  color: #818181;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: solid 1px; }
+  @media only screen and (min-width: 768px) {
+    .caption {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1280px) {
+    .caption {
+      font-size: 1.2rem; } }
+
+.portfolio-box {
+  padding: 0 50px 15px;
+  text-align: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1rem;
+  color: #414141;
+  flex-grow: 1; }
+
+.circle-portfolio {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  max-height: 80vh;
-  max-width: 90%;
-  display: block;
-  margin: 0 auto; }
+  height: 190px;
+  width: 190px; }
   @media only screen and (min-width: 768px) {
-    .portfolio {
-      height: 300px;
-      z-index: 3;
-      position: absolute; } }
-  @media only screen and (min-height: 769px) {
-    .portfolio {
-      height: 380px; } }
-
-@media only screen and (min-width: 768px) {
-  .is_project {
-    bottom: -50px;
-    right: 20px; } }
-
-@media only screen and (min-width: 768px) {
-  .album {
-    top: -60px;
-    left: 10px; } }
-
-.circle4 {
-  height: 200px;
-  width: 200px;
-  background-color: rgba(105, 174, 187, 0.2);
-  text-align: center;
-  -webkit-transition: 1000ms;
-  -moz-transition: 1000ms;
-  -ms-transition: 1000ms;
-  -o-transition: 1000ms;
-  transition: 1000ms;
-  transform: translateY(-30%);
-  -webkit-transform: translateY(-30%);
-  -ms-transform: translateY(-30%); }
-  @media only screen and (min-width: 768px) {
-    .circle4 {
-      transform: translateY(0%);
-      -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-      bottom: 50px;
-      right: 250px; } }
-  @media only screen and (min-height: 769px) {
-    .circle4 {
-      height: 250px;
-      width: 250px;
-      bottom: 75px;
-      right: 335px; } }
-
-.circle5 {
-  height: 200px;
-  width: 200px;
-  background-color: rgba(105, 174, 187, 0.3);
-  text-align: center;
-  -webkit-transition: 1000ms;
-  -moz-transition: 1000ms;
-  -ms-transition: 1000ms;
-  -o-transition: 1000ms;
-  transition: 1000ms;
-  transform: translateY(-30%);
-  -webkit-transform: translateY(-30%);
-  -ms-transform: translateY(-30%); }
-  @media only screen and (min-width: 768px) {
-    .circle5 {
-      transform: translateY(0%);
-      -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-      top: 60px;
-      left: 250px; } }
-  @media only screen and (min-height: 769px) {
-    .circle5 {
-      height: 250px;
-      width: 250px;
-      top: 95px;
-      left: 300px; } }
-
-.circle-hover {
-  background-color: rgba(105, 174, 187, 0.6); }
-
-.bubble_caption {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
-  color: #676767; }
-  @media only screen and (min-width: 768px) {
-    .bubble_caption {
-      font-size: 1rem; } }
-  @media only screen and (min-height: 769px) {
-    .bubble_caption {
-      font-size: 1.2rem; } }
+    .circle-portfolio {
+      height: 100px;
+      width: 100px; } }
+  @media only screen and (min-width: 1024px) {
+    .circle-portfolio {
+      height: 120px;
+      width: 120px; } }
+  @media only screen and (min-width: 1280px) {
+    .circle-portfolio {
+      height: 190px;
+      width: 190px; } }
 
 footer .social_media_box2 {
   background-color: #414141;
