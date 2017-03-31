@@ -301,7 +301,6 @@ li {
     .heart {
       left: 120px; } }
 
-/* -------- SECTION 0 ------- */
 /* -------- SECTION 1 ------- */
 .circle1 {
   display: none; }
@@ -325,7 +324,7 @@ li {
   @media only screen and (min-width: 768px) {
     .circle3 {
       display: flex;
-      background-color: rgba(105, 174, 187, 0.2);
+      background-color: rgba(105, 174, 187, 0.4);
       -webkit-transition: 300ms ease-in-out;
       -moz-transition: 300ms ease-in-out;
       -ms-transition: 300ms ease-in-out;

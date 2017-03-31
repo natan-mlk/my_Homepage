@@ -402,8 +402,6 @@ li {
   }
 }
 
-/* -------- SECTION 0 ------- */
-
 /* -------- SECTION 1 ------- */
 
 .circle1 {
@@ -430,7 +428,7 @@ li {
   @include screen_small {
     display: flex;
 
-    background-color: rgba($basic_accent, 0.2);
+    background-color: rgba($basic_accent, 0.4);
     @include transition(300ms ease-in-out);
   }
 
