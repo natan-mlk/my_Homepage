@@ -529,7 +529,6 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  //position: absolute;
   width: 100%;
   @include screen_small {
     flex-wrap: nowrap;
@@ -542,14 +541,7 @@ li {
   justify-content: flex-end
 }
 
-.top {
-  bottom: 0;
-}
-
-.bot {
-}
-
-.infoshare {
+.caption {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -559,6 +551,12 @@ li {
   text-align: center;
   font-size: 1.2rem;
   border-bottom: solid 1px;
+  @include screen_small {
+    font-size: 1rem;
+  }
+  @include screen_desktop_normal {
+    font-size: 1.2rem;
+  }
 }
 
 .portfolio-box {
@@ -574,92 +572,17 @@ li {
   @include create_circle;
   height: 190px;
   width: 190px;
-}
-
-.portfolio {
-  @include create_circle;
-  max-height: 80vh;
-  max-width: 90%;
-  display: block;
-  margin: 0 auto;
-
   @include screen_small {
-    height: 300px;
-    z-index: 3;
-    position: absolute;
+    height: 100px;
+    width: 100px;
   }
-  @include height_more_768 {
-    height: 380px;
+  @include screen_desktop_small {
+    height: 120px;
+    width: 120px;
   }
-}
-
-.is_project {
-  @include screen_small {
-    bottom: -50px;
-    right: 20px;
-  }
-}
-
-.album {
-  @include screen_small {
-    top: -60px;
-    left: 10px;
-  }
-}
-
-.circle4 {
-  height: 200px;
-  width: 200px;
-  background-color: rgba($basic_accent, 0.2);
-  text-align: center;
-  @include transition (1000ms);
-  @include transform(translateY(-30%));
-  @include screen_small {
-    @include transform(translateY(0%));
-    bottom: 50px;
-    right: 250px;
-  }
-  @include height_more_768 {
-    height: 250px;
-    width: 250px;
-    bottom: 75px;
-    right: 335px;
-  }
-}
-
-.circle5 {
-  height: 200px;
-  width: 200px;
-  background-color: rgba($basic_accent, 0.3);
-  text-align: center;
-  @include transition (1000ms);
-  @include transform(translateY(-30%));
-  @include screen_small {
-    @include transform(translateY(0%));
-    top: 60px;
-    left: 250px;
-  }
-  @include height_more_768 {
-    height: 250px;
-    width: 250px;
-    top: 95px;
-    left: 300px;
-  }
-}
-
-.circle-hover {
-  background-color: rgba($basic_accent, 0.6);
-}
-
-.bubble_caption {
-  font-family: $fontQuote;
-  font-size: 1.2rem;
-  color: lighten($basic_grey, 15%);
-  @include screen_small {
-    font-size: 1rem;
-  }
-  @include height_more_768 {
-    font-size: 1.2rem;
+  @include screen_desktop_normal {
+    height: 190px;
+    width: 190px;
   }
 }
 
