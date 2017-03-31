@@ -432,22 +432,37 @@ li {
 
 .col-reverse {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column;
+  justify-content: flex-end; }
 
 .top {
   bottom: 0; }
 
+.infoshare {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 5px;
+  color: #818181;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: solid 1px; }
+
 .portfolio-box {
-  padding: 0 50px 0;
+  padding: 0 50px 15px;
   text-align: center;
   font-family: "Archivo Narrow", sans-serif;
-  font-size: 1.1rem;
-  color: #414141; }
+  font-size: 1rem;
+  color: #414141;
+  flex-grow: 1; }
 
 .circle-portfolio {
   border-radius: 50%;
   -moz-border-radius: 50%;
-  -webkit-border-radius: 50%; }
+  -webkit-border-radius: 50%;
+  height: 190px;
+  width: 190px; }
 
 .portfolio {
   border-radius: 50%;

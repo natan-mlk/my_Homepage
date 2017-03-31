@@ -76,7 +76,7 @@ $fontNav: 'Roboto Condensed', sans-serif;
 
 body {
   opacity: 1;
-@include transition(1500ms);
+  @include transition(1500ms);
 }
 
 body.fade-in {
@@ -279,7 +279,6 @@ body.fade-in {
   }
 }
 
-
 /* -------- NAVIGATION ------ */
 
 ul {
@@ -310,7 +309,6 @@ li {
 #top-menu li.active a {
   background-color: $basic_accent
 }
-
 
 /* ======= PANEL FOR SMARTPHONES ======= */
 
@@ -540,7 +538,8 @@ li {
 
 .col-reverse {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: flex-end
 }
 
 .top {
@@ -548,24 +547,34 @@ li {
 }
 
 .bot {
+}
 
+.infoshare {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 5px;
+  color: lighten($basic_grey, 25%);
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: solid 1px;
 }
 
 .portfolio-box {
-  padding: 0 50px 0;
+  padding: 0 50px 15px;
   text-align: center;
   font-family: $fontMain;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: $basic_grey;
-
- // font-family: 'Raleway', sans-serif;
-  //color: lighten($basic_grey, 25%);
+  flex-grow: 1
 }
 
 .circle-portfolio {
   @include create_circle;
+  height: 190px;
+  width: 190px;
 }
-
 
 .portfolio {
   @include create_circle;
@@ -649,7 +658,7 @@ li {
   @include screen_small {
     font-size: 1rem;
   }
-  @include  height_more_768 {
+  @include height_more_768 {
     font-size: 1.2rem;
   }
 }
