@@ -602,3 +602,38 @@ footer {
     }
   }
 }
+
+/* -------- CV ------- */
+
+.cv {
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+
+.download {
+  @include create_circle;
+  height: 150px;
+  width: 150px;
+  background-color: rgba($basic_accent, 0.4);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  a:link {
+    text-decoration: none;
+    font-family: $fontQuote;
+    font-weight: 300;
+    text-align: center;
+    color: $basic_grey;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: $basic_grey;
+  }
+}

@@ -493,4 +493,33 @@ footer .social_media_box2 {
       footer .social_media_box2 .media_icon2 {
         display: none; } }
 
+/* -------- CV ------- */
+.cv {
+  text-align: center; }
+  .cv img {
+    max-width: 100%; }
+
+.download {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(105, 174, 187, 0.4);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .download a:link {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #414141; }
+  .download a:visited {
+    text-decoration: none;
+    color: #414141; }
+
 /*# sourceMappingURL=styles.css.map */
